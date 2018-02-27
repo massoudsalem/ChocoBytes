@@ -1,0 +1,127 @@
+<!Doctype html>
+<html>
+<head>
+    <title>My 3rd HTML Page</title>
+    <meta name="author" content="Mohammad Massoud"/>
+    <meta name="description" content="My third html page"/>
+</head>
+
+<body>
+  <form action="Page.html" method="post">
+    <!--form tag:
+        action is for action on clicking submit.
+        method is method for pushing data post is safe
+        cuz the data doesn't appear as in get method.
+        -->
+        <fieldset>
+            <legend>1st Fieldset</legend><!--legend tag is for fieldset name-->
+            <input type="text" name="username" placeholder="Username"/> <br />
+              <!--input tag:
+                    is for taking input.
+                  types:
+                    text is textbox.
+                    submit is button for submission.
+                    password is textbox for password.
+                    reset is clearing data button.
+                    radio is radio button.
+                    select is combobox.
+                  placeholder attribute is for fade hit.
+                  -->
+          <input type="email" name="email" placeholder="example@example.com"/> <br />
+          <input type="password" name="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;"/> <br />
+            <!--&bull; is escape disk character-->
+          <font size="4pt"><b>Gender</b><br /></font>
+          <input type="radio" name="gender"/>Male<br />
+          <input type="radio" name="gender"/>Female<br />
+          <font size="4pt"><b>Country</b><br /></font>
+          <select>
+            <!--select tag is for combobox
+                optgroup tag is for making a label for a group of items.
+                option tag is for making an option.
+                selected attribute is for select item 1st item in list.
+                -->
+            <optgroup label="Middle East">
+              <option>Bahrain</option>
+              <option selected>Egypt</option>
+              <option>Iraq</option>
+              <option>Palastain</option>
+              <option>Jordan</option>
+              <option>Kuwait</option>
+              <option>Lebanon</option>
+              <option>Oman</option>
+              <option>Qatar</option>
+              <option>Saudi Arabia</option>
+              <option>Syria</option>
+              <option>Turkey</option>
+              <option>United Arab Emirates</option>
+              <option>Yemen</option>
+            </optgroup>
+            <optgroup label="European Union">
+              <option>Germany</option>
+              <option>Greece</option>
+              <option>Hungary</option>
+              <option>Ireland</option>
+              <option>Italy</option>
+              <option>Latvia</option>
+              <option>Lithuania</option>
+              <option>Luxembourg</option>
+              <option>Malta</option>
+              <option>Netherlands</option>
+              <option>Poland</option>
+              <option>Portugal</option>
+              <option>Romania</option>
+              <option>Slovakia</option>
+              <option>Spain</option>
+              <option>Sweden</option>
+              <option>United Kingdom</option>
+            </optgroup>
+          </select><br />
+          <input type="checkbox" name="terms"/>I accept all terms<br />
+          <input type="submit" name="sendButton" value="Send"/>
+          <input type="reset" name="resetButton" value="Clear"/><br />
+        </fieldset>
+
+
+        <fieldset>
+          <legend>2nd Fieldset</legend>
+          <textarea cols="30" rows="10" placeholder="Please write any comment here."></textarea><br />
+            <!--textarea tag is for text area:
+                cols attribute is for columns.
+                rows attribute is for rows.
+                placeholder attribute is for fade hit.
+                -->
+            <!--Note: donna leave distance between textarea open tag and it's closed tag-->
+          <input type="button" value="buttonName" onclick="alert('The button has been clicked')"><br />
+          <input type="color" value="color"><br />
+          <input type="date" value="date" max="2018-12-31" min="1980-01-01"><br />
+          <input type="month" value="month"><br />
+          <input type="week" value="week"><br />
+          <input type="time" value="time"><br />
+          <input type="datetime-local" value="datetime-local"><br />
+          <input type="number" placeholder="0" min="1" max="20"><br />
+          <input type="range" value="range" min="1" max="20"><br />
+          <input type="url" placeholder="https://www.google.com"><br />
+          <input type="search" placeholder="search"><br />
+          <!--
+              Types:
+                button
+                  takes attribute onclick that run something like JS code for example.
+                color
+                  open an color picker to select an color and return it in value.
+                date
+                  open a date picker to select date and return it in value.
+                  max and min attributes define a limit to date of date-input in format of yyyy-mm-dd.
+                month is a date without day
+                week is a week date input.
+                time takes time.
+                datetime-local input of time and date.
+                number takes a number.
+                range takes a range of numbers.
+                url takes an uniform resource locator Or uniform resource identifier.
+                search takes search input.
+              -->
+        </fieldset>
+  </form>
+</body>
+
+</html>
