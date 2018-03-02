@@ -1,0 +1,64 @@
+
+*{ /* all tags and elements has weight of 0 */
+  color : black;
+}
+
+/*____________________________________________________*/
+
+p { /* p is is the selector for <p> tag it's weight is 1 */
+    color: #ff0000; /* every property in the style sheet has as color:red; */
+    text-align: center;
+}
+pre { /* pre is is the selector for <pre> tag it's weight is 1 */
+      /* note that: pre tag can hold text beside anyother tag and applying the style on it. */
+    color: red; /* every pre in the style sheet has as color:red;
+                    color is for textcolor*/
+    text-align: center;
+}
+
+/*____________________________________________________*/
+
+.classname { /* class selector is for anytag has weight of 10 */
+  color: rgb(0, 0, 255);  /* blue color */
+}
+
+/*____________________________________________________*/
+
+#elementid { /* id selector is for one element that has this id has weight of 100 */
+  color: white;
+  background-color: red;
+}
+
+/*____________________________________________________*/
+
+p.classname{ /* tag.classname this is applied on the classname in that tag has weight of 11 (tag+class = 1+10) == 11 */
+            /* can be written as p > classname */
+  background-color: purple;
+  color: white;
+}
+h1, h2 { /* group selectors, separate each selector with a comma. */
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+
+/*
+Calculating Specificity
+The actual specificity of a group of nested selectors takes some calculating.
+You can give every ID selector (“#whatever”) a value of 100,
+every class selector (“.whatever”) a value of 10 and every
+  HTML selector (“whatever”) a value of 1.
+When you add them all up, hey presto, you have a specificity value.
+
+p has a specificity of 1 (1 HTML selector)
+div p has a specificity of 2 (2 HTML selectors, 1+1)
+.tree has a specificity of 10 (1 class selector)
+div p.tree has a specificity of 12 (2 HTML selectors + a class selector, 1+1+10)
+#baobab has a specificity of 100 (1 id selector)
+body #content .alternative p has a specificity of 112
+(HTML selector + id selector + class selector + HTML selector, 1+100+10+1)
+So if all of these examples were used, div p.tree
+(with a specificity of 12) would win out over div p (with a specificity of 2)
+  and body #content .alternative p would win out over all of them
+  ref:http://www.htmldog.com/guides/css/intermediate/specificity/
+*/
