@@ -1,0 +1,115 @@
+/*  */
+*{
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: Milkshake;
+  src: url("./fonts/Milkshake.ttf");
+}
+.whitetxt{
+  color: white;     /* color for text in this class */
+  text-align: center; /* text-align in this class */
+}
+
+h1{
+  color: white;
+}
+
+pre{
+  font-size: 14pt;
+  text-align: left;
+}
+
+div{
+  text-align: center; /* text align for all div tags */
+}
+
+.purple-div{
+  background-image: url("./img/purple.svg"); /* background image  */
+}
+
+
+.purple-grid-div{
+  background-image: url("./img/grid-bg.png");
+}
+
+
+.purple-grid-div-xrepeat{
+  background-image: url("./img/grid-bg.png");
+  background-repeat: repeat-x; /*repeataion in x axis only*/
+}
+
+.black-and-white-grid-div-yrepeat{
+  background-image: url("./img/v-grid-bg.png"); /* background image using url in the same base */
+  background-repeat: repeat-y; /* repeat in y axies diraction only*/
+  color: black; /* color of text is black */
+  text-align: left; /* align text to left */
+}
+.bg-position{
+  width: auto; /*assgin auto width*/
+  height: 300px; /* assgin 300px height */
+  text-align: left; /* align text to left */
+  background-image: url("./img/tree.svg");  /* background image using url in the same base */
+  background-repeat: no-repeat; /* no repeat in any direction */
+  background-size: 50% 100%; /* background size : width height */
+  background-position: top right; /* positon top-right of background */
+}
+.bg-position-shorthand{
+  width: auto; /*assgin auto width*/
+  height: 300px; /* assgin 300px height */
+  background: url("./img/tree.svg") no-repeat fixed top right;
+}
+.div-form{
+border: 0.2em solid #DEC095;
+  margin: 0.25em 0; /* margin:top-bottom left-rightp; is for space outside the boxmodel*/
+  padding: 10px; /* padding:all; is for space inside the boxmodel*/
+  background-color: #774125;
+}
+.signin-form{
+  display: block;
+  margin-left: 35%;
+  margin-right: 35%;
+  text-align: left;
+}
+::placeholder {
+  color: #F7F1DB; /* placeholder text color */
+}
+.text{
+  color:#E28343;
+  font-size: 18pt;
+  display: inline;
+}
+.txt-box{
+  color: #FFF3D3; /* text color*/
+  font-size: 14pt;  /* text size*/
+  border : 0px; /* noborder for text-boxes */
+  padding: 0.25em;  /* padding for text relative to text itself */
+  border-left: 0.75em #361809 solid; /* left border of text-boxes */
+  background-color:#623820 /* background-color for text text-boxes */
+}
+.btn{
+  padding: 0.25em;
+  margin: 0.25em 0 0.25em 0; /* margin : top left bottom right */
+  color:#E28343;
+  font-size: 18pt;
+  background-color:#361809;
+  border: 0px;
+}
+.header{
+  background-color: #CC925D;
+  padding: 10px;
+  width: auto; /* all page width*/
+}
+.div-in-header{
+  padding: 15px;
+  border: 0.2em dashed #DEC095; /* dashed boarder for more about border check:https://www.w3schools.com/css/css_border.asp */
+  background-color: #44281F;
+}
+#wb-name{
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  font-family: Milkshake;
+  color: #FFF3D3;
+}
