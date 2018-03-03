@@ -1,10 +1,8 @@
-#ChocoBytes
-
+ChocoBytes
+===
 ![empty logo](https://user-images.githubusercontent.com/36758120/36936996-65a9407e-1f15-11e8-94e3-5d7663b4ffd2.png)
 
-###Website project
-
-made by the following languages 
+**Website project** made by the following languages 
 
 {   
 
