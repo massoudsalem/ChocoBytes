@@ -17,9 +17,9 @@ The website will concentrate on the following languages
 
 {
 
-	1- *C++*  
-	2- *Java*  
-	3- *C#*
+	1-  C++  
+	2-  Java 
+	3-  C#
 
 } 
 
