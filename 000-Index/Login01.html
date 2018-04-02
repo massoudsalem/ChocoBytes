@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>ChocoBytes</title>
+        <meta charset = "utf-8"/>
+        <meta name="content" content="ChocoBtytes html page"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=".\style\style01.css" type="text/css"/>
+    </head>
+    <body>
+      <!-- The Header -->
+      <header id="head">
+        <div class="div-in-header">
+          <div class="logo">
+            <img src="./img/logo.svg" alt="languages" id="logo">
+          </div>
+          <div class="center-header">
+            <img src="./img/smile.svg" alt="smile" id="smileleft">
+            <span id="wb-name">ChocoBytes</span>
+            <img src="./img/smile.svg" alt="smile" id="smileright">
+          </div>
+          <div class="left-header">
+            <img src="./img/lang.svg" alt="languages" id="lang">
+          </div>
+        </div>
+      </header>
+      <nav id="navbar">
+        <div class="navbar-list-container">
+          <ul class="navbar-list">
+            <li><a class="navlistitem" href="">Button1</a></li>
+            <li><a class="navlistitem" href="">Button2</a> </li>
+            <li><a class="navlistitem" href="">Button3</a></li>
+          </ul>
+        </div>
+        <form class="search-bar">
+          <input class="search" type="text" placeholder="Search..." required>
+          <input class="search-btn" type="image" src="./img/search.svg" value="Search">
+        </form>
+      </nav>
+      <!-- end of header -->
+      <!-- Dynamiclist -->
+      <script src="script/scripting.js"></script>
+      <div id="list-id" class="list-class">
+        <a hrf="#" class="list-class-a" onclick="CloseList()">&times;</a>
+        <a href="#">C++</a>
+        <a href="#">Java</a>
+        <a href="#">C#</a>
+      </div>
+      <div id="list-div"><span id="list-span" onclick="OpenList()">&#9776; Menu</span></div>
+      <!-- Dynamiclist -->
+    <!-- SignUpForm -->
+      <div id="loginformdiv">
+        <!--<img src="./img/005-computer.svg" alt="languages" id="form-background" >-->
+        <div id="formcontent">
+          <form id="loginform">
+            <img src="./img/logo.svg" alt="languages" id="form-logo" >
+            <input class="form-style" type="text" name="UserName" placeholder="User name">
+            <input class="form-style" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            <input id="form-style" type="submit" value="Log In">
+          </form>
+        </div>
+      </div>
+    <!-- SignUpForm -->
+
+    </body>
+</html>
