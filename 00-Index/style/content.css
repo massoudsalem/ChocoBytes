@@ -1,0 +1,21 @@
+.section{
+  background-color: #321400;
+  margin-bottom: 1.5em;
+  color: #FFFBF0;
+  padding: 20px;
+  border: 5px solid #cc925d;
+  border-radius: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.color{
+  color:#F7D391;
+  font-weight: bold;
+}
+#csharp-content ul,li{
+  list-style-position: inside;
+}
+a{
+  text-decoration: none;
+  color:#F7D391;
+}

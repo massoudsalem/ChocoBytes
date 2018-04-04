@@ -1,0 +1,258 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>ChocoBytes</title>
+        <meta charset = "utf-8"/>
+        <meta name="content" content="ChocoBtytes html page"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=".\style\style02.css" type="text/css"/>
+        <link rel="stylesheet" href=".\style\content.css" type="text/css"/>
+    </head>
+    <body>
+      <!-- The Header -->
+      <header id="head">
+        <div class="div-in-header">
+          <div class="logo">
+            <img src="./img/logo.svg" alt="blocks" id="logo">
+          </div>
+          <div class="center-header">
+            <img src="./img/smile.svg" alt="smile" id="smileleft">
+            <span id="wb-name">ChocoBytes</span>
+            <img src="./img/smile.svg" alt="smile" id="smileright">
+          </div>
+          <div class="left-header">
+            <img src="./img/lang.svg" alt="blocks" id="lang">
+          </div>
+        </div>
+      </header>
+      <nav id="navbar">
+        <div class="navbar-list-container">
+          <ul class="navbar-list">
+            <li><div id="list-div"><img src="img/list-btn.svg" id="list-img" onclick="OpenList()" /></div>
+            </li>
+            <li><a class="navlistitem" href="">Button2</a> </li>
+            <li><a class="navlistitem" href="">Button3</a></li>
+          </ul>
+        </div>
+        <form class="search-bar">
+          <input class="search" type="text" placeholder="Search..." required>
+          <input class="search-btn" type="image" src="./img/search.svg" value="Search">
+        </form>
+      </nav>
+      <!-- end of header -->
+      <div id="list-id" class="list-class">
+          <a hrf="#" class="list-class-a" onclick="CloseList()">&times;</a>
+          <a href="#">C++</a>
+          <a href="#">Java</a>
+          <a href="#">C#</a>
+          <a href="#">Scratch</a>
+          <a href="#">Web</a>
+          <a href="#">APDim</a>
+        </div>
+        <div id="blocks-div">
+          <div class="center">
+            <span id="Close-blocks" onclick="Closeblocks()">&times;</span>
+            <div class="blocks" id="Cplusplus" onclick="Cplusplus()">C++</div>
+            <div class="blocks" id="Java" onclick="Java()">Java</div>
+            <div class="blocks" id="Csharp" onclick="Csharp()">C#</div>
+            <div class="blocks" id="Scratch" onclick="Scratch()">Scratch</div>
+            <div class="blocks" id="Web" onclick="Web()">Web</div>
+          </div>
+            <!--<div class="blocks" id="APDim" onclick="APDim()">APDim</div>-->
+        </div>
+        <content>
+          <div id="bta3">
+        <div id="csharp-content">
+            <div id="why-csharp"  class="section">
+                <h1 class="color">Why C#?</h1><br>
+                <p>
+                    C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.
+                </p>
+                <p>
+                    C# could theoretically be compiled to machine code, but in real life, it's always used in combination with the .NET framework. Therefore, applications written in C#, requires the .NET framework to be installed on the computer running the application. While the .NET framework makes it possible to use a wide range of languages, C# is sometimes referred to as THE .NET language, perhaps because it was designed together with the framework.
+                </p>
+                <p>
+                    C# is an Object Oriented language and does not offer global variables or functions. Everything is wrapped in classes, even simple types like int and string, which inherits from the System.Object class.
+                </p>
+            </div>
+
+            <div id="diff-betweenCplusCsharp"  class="section">
+                <h1 class="color">C# is better than C++ in that:</h1>
+                <ul>
+                    <li>It has native garbage-collection.</li>
+                    <br>
+                    <li>
+                        It allows you to treat class-methods' signatures as free functions (i.e. ignoring the statically typed <code style="background-color: #320A00">this</code> pointer argument), and hence create more dynamic and flexible relationships between classes. edit if you don't know what this means, then try assigning a member method returning void and accepting void to a <code class="code">void (*ptr)()</code> variable. C# delegates carry the <code class="code">this</code>pointer with them, but the user doesn't always have to care about that. They can just assign a <code class="code">void()</code> method of any class to any other <code class="code">void()</code> delegate.
+                    </li>
+                    <br>
+                    <li>
+                        It has a huge standard library with so much useful stuff that's well-implemented and easy to use.
+                    </li>
+                    <br>
+                    <li>It allows for both managed and native code blocks.</li><br>
+                    <li>Assembly versioning easily remedy DLL hell problems.</li><br>
+                    <li>
+                        You can set classes, methods and fields to be assembly-internal (which means they are accessible from anywhere within the DLL they're declared in, but not from other assemblies).
+                    </li>
+                </ul>
+            </div>
+
+            <div id="diff-betweenJavaCsharp"  class="section">
+                <h1 class="color">C# is better than Java in that:</h1>
+                <ul >
+                    <li>
+                        Instead of a lot of noise (EJB, private static class implementations, etc) you get elegant and friendly native constructs such as Properties and Events.
+                    </li>
+                    <br>
+                    <li>
+                        You have real generics (not the bad casting joke that Java calls generics), and you can perform reflection on them.
+                    </li>
+                    <br>
+                    <li>
+                        It supports native resource-management idioms (the <code class="code">using</code> statement). Java 7 is also going to support this, but C# has had it for a way longer time.
+                    </li>
+                    <br>
+                    <li>
+                        It doesn't have checked exceptions :) (debatable whether this is good or bad)
+                    </li>
+                    <br>
+                    <li>It's deeply integrated with Windows, if that's what you want.</li><br>
+                    <li>
+                        It has Lambdas and LINQ, therefore supporting a small amount of functional programming.
+                    </li>
+                    <br>
+                    <li>It allows for both generic covariance and contravariance explicitly.</li><br>
+                    <li>It has dynamic variables, if you want them.</li><br>
+                    <li>
+                        Better enumeration support, with the <code class="code">yield</code> statement.
+                    </li>
+                    <br>
+                    <li>It allows you to define new value (or non-reference) types.</li><br>
+                </ul>
+            </div>
+
+            <div  id="editor-compiler" class="section">
+                <h1 class="color">C# Text editor and Compiler</h1>
+                <p>
+                    C# can be written with any text editor, like Windows Notepad, and then compiled with the C# Command line compiler, csc.exe, which comes with the .NET framework. However, most people prefer to use an IDE (Integrated Development Environment), and Microsoft offers several options for this. Their flagship is Visual Studio, which can be used to work on every possible aspect of the .NET framework. This product is very advanced, and comes in several editions. Visual Studio is not exactly cheap, and might even be too advanced for hobby programmers.
+                </p>
+                <p>
+                    For C# programming, you should download the Visual Studio Community 2017 from
+                    <a href="https://www.visualstudio.com/downloads/" >https://www.visualstudio.com/downloads/</a>. Install it, and you're ready to write your first C# application!
+                </p>
+            </div>
+
+            <div  id="Overview" class="section">
+                <h1 class="color">C# - Overview</h1>
+                <p>
+                    C# is a modern, general-purpose, object-oriented programming language developed by Microsoft and approved by European Computer Manufacturers Association (ECMA) and International Standards Organization (ISO).
+                    C# was developed by Anders Hejlsberg and his team during the development of .Net Framework.
+                </p>
+                <p>
+                    C# is designed for Common Language Infrastructure (CLI), which consists of the executable code and runtime environment that allows use of various high-level languages on different computer platforms and architectures.
+                </p>
+                <ul>The following reasons make C# a widely used professional language −
+                    <br>
+                    <li>It is a modern, general-purpose programming language</li><br>
+                    <li>It is object oriented.</li><br>
+                    <li>It is component oriented.</li><br>
+                    <li>It is easy to learn.</li><br>
+                    <li>It is a structured language.</li><br>
+                    <li>It produces efficient programs.</li><br>
+                    <li>It can be compiled on a variety of computer platforms.</li><br>
+                    <li>It is a part of .Net Framework.</li><br>
+                </ul>
+            </div>
+
+            <div  id="strong-features" class="section">
+                <h1 class="color">Strong Programming Features of C#</h1>
+                <p>
+                    Although C# constructs closely follow traditional high-level languages, C and C++ and being an object-oriented programming language. It has strong resemblance with Java, it has numerous strong programming features that make it endearing to a number of programmers worldwide.
+                </p>
+                <ul>Following is the list of few important features of C# −
+                    <br>
+                    <li>Boolean Conditions</li><br>
+                    <li>Automatic Garbage Collection</li><br>
+                    <li>Standard Library</li><br>
+                    <li>Assembly Versioning</li><br>
+                    <li>Properties and Events</li><br>
+                    <li>Delegates and Events Management</li><br>
+                    <li>Easy-to-use Generics</li><br>
+                    <li>Indexers</li><br>
+                    <li>Conditional Compilation</li><br>
+                    <li>Simple Multithreading</li><br>
+                    <li>LINQ and Lambda Expressions</li><br>
+                    <li>Integration with Windows</li><br>
+                </ul>
+            </div>
+
+            <div  id="csharp-environment" class="section">
+                <h1 class="color">Strong Programming Features of C#</h1>
+                <p>
+                    In this chapter, we will discuss the tools required for creating C# programming. We have already mentioned that C# is part of .Net framework and is used for writing .Net applications. Therefore, before discussing the available tools for running a C# program, let us understand how C# relates to the .Net framework.
+                </p>
+            </div>
+
+            <div  id="dotnet" class="section">
+                <h1 class="color">The .Net Framework</h1>
+                <ul>The .Net framework is a revolutionary platform that helps you to write the following types of applications −
+                    <br>
+                    <li>Windows applications</li><br>
+                    <li>Web applications</li><br>
+                    <li>Web services</li><br>
+                </ul>
+                <p>
+                    The .Net framework applications are multi-platform applications. The framework has been designed in such a way that it can be used from any of the following languages: C#, C++, Visual Basic, Jscript, COBOL, etc. All these languages can access the framework as well as communicate with each other.
+                </p>
+                <ul>The .Net framework consists of an enormous library of codes used by the client languages such as C#. Following are some of the components of the .Net framework −
+                    <br>
+                    <li>Common Language Runtime (CLR)</li><br>
+                    <li>The .Net Framework Class Library</li><br>
+                    <li>Common Type System</li><br>
+                    <li>Metadata and Assemblies</li><br>
+                    <li>Windows Forms</li><br>
+                    <li>ASP.Net and ASP.Net AJAX</li><br>
+                    <li>ADO.Net</li><br>
+                    <li>Windows Workflow Foundation (WF)</li><br>
+                    <li>Windows Presentation Foundation</li><br>
+                    <li>Windows Communication Foundation (WCF)</li><br>
+                    <li>LINQ</li><br>
+                </ul>
+            </div>
+
+            <div  id="ide" class="section">
+                <h1 class="color">Integrated Development Environment (IDE) for C#</h1>
+                <ul>Microsoft provides the following development tools for C# programming −
+                    <br>
+                    <li>Visual Studio 2010 (VS)</li><br>
+                    <li>Visual C# 2010 Express (VCE)</li><br>
+                    <li>Visual Web Developer</li><br>
+                </ul>
+                <p>
+                    The last two are freely available from Microsoft official website. Using these tools, you can write all kinds of C# programs from simple command-line applications to more complex applications. You can also write C# source code files using a basic text editor, like Notepad, and compile the code into assemblies using the command-line compiler, which is again a part of the .NET Framework.
+                </p>
+            </div>
+
+            <div  id="linux-mac" class="section">
+                <h1 class="color">Writing C# Programs on Linux or Mac OS</h1>
+                <p>
+                    Although the.NET Framework runs on the Windows operating system, there are some alternative versions that work on other operating systems. Mono is an open-source version of the .NET Framework which includes a C# compiler and runs on several operating systems, including various flavors of Linux and Mac OS.
+                </p>
+                <p>
+                    The stated purpose of Mono is not only to be able to run Microsoft .NET applications cross-platform, but also to bring better development tools for Linux developers. Mono can be run on many operating systems including Android, BSD, iOS, Linux, OS X, Windows, Solaris, and UNIX.
+                </p>
+            </div>
+          </div>
+      </div>
+</content>
+
+
+
+
+
+
+
+
+        <script src="script/scripting.js" onclick=""></script>
+    </body>
+</html>

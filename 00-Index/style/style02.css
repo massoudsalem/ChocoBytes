@@ -2,9 +2,14 @@
   font-family: Milkshake;
   src: url("./fonts/Milkshake.ttf");
 }
+@font-face {
+  font-family: Arcon;
+  src: url("./fonts/Arcon-Regular.otf");
+}
 *{
   padding: 0;
   margin: 0;
+  font-family: Arcon;
 }
 body{
   background-color: #1e110b;
@@ -245,10 +250,10 @@ a.navlistitem:active{
     opacity: 0.8;
 }
 #bta3{
-  min-width: 385px;
+  min-width: 345px;
   margin: 0 5px;
   overflow: hidden;
-  border: 5px dashed #fff;
+  padding: 20px;
 }
 #Close-blocks{
     width: 0;
@@ -275,7 +280,7 @@ a.navlistitem:active{
     top:23px;
     z-index: 5;
 }
-#Right-list span{
+/*#Right-list span{
     width: 20%;
     font-size: 20px;
     padding: 15px;
