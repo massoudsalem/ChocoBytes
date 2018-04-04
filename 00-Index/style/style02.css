@@ -82,6 +82,7 @@ nav{
   flex-wrap: wrap;
   background-color: #6A371C;
   border-bottom: 5px solid #371809;
+  border-top: 1px solid #6A371C;
   min-width: 100%;
   min-height: 23px;
   max-height: 35px;
@@ -248,6 +249,31 @@ a.navlistitem:active{
 }
 .blocks:hover{
     opacity: 0.8;
+}
+.hide{
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.fullblock{
+  min-width:250px;
+  max-width: 500px;
+  width: 100%;
+  padding: 15px;
+  background-color: #774125;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  font-size: 100%;
+  border-left: 5px solid #371809;
+  cursor: pointer;
+  transition: .7s;
+  color: #cc925d;
+  overflow: hidden;
+}
+.fullblock:hover{
+  opacity: 0.8;
 }
 #bta3{
   min-width: 345px;
