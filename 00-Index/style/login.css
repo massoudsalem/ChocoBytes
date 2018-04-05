@@ -1,0 +1,74 @@
+#loginformdiv{
+  width: 260px;
+  min-width: 390px;
+  height: 180px;
+  margin: auto;
+  overflow: hidden;
+  background-image:url('../img/005-computer.svg');
+  background-position: 50% 50% ;
+  background-repeat: no-repeat;
+  background-size: 410px 410px;
+}
+#formcontent{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 13px;
+  width: 50%;
+  max-width: 230px;
+  min-width: 230px;
+  //margin: auto;
+  overflow: hidden;
+}
+input.formtextinput{
+  display: block;
+  color:#DEC095;
+  font-family: Acron;
+  margin-bottom: 2px;
+  min-width: 100px;
+  height: 16px;
+  background-color: #4d2600;
+  font-size: 16px;
+  padding: 1px;
+  border: 0;
+  padding-left: 2px;
+  border-left: 5px solid #1e110b;
+}
+input.formtextinput::placeholder {
+  color: #E28343;
+  opacity: 1;
+}
+#submitstyle{
+  background-color: #1e110b;
+  font-family: Acron;
+  border: 0;
+  padding: 2px;
+  text-align: center;
+  color: #E28343;
+}
+#submitstyle:hover{
+  color:#1e110b;
+}
+#form-logo{
+  width: 60%;
+  margin-left: 30px;
+  height: auto;
+}
+#form-background{
+  margin: 0 auto;
+  /* background-color: red; */
+  width: 100%;
+  z-index: -1000;
+}
+#loginform{
+  max-width: 200px;
+  margin: 0 auto;
+}
+#list-div{
+    width: 150px;
+    transition: .5s;
+    padding: 16px;
+}
+#list-span{
+    cursor: pointer;
+    color: #cc925d;
+}
