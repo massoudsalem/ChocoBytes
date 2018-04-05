@@ -1,21 +1,51 @@
+@media screen and (max-width: 600px){
+  div#loginformdiv{
+    width: 260px;
+    min-width: 390px;
+    height: 180px;
+    background-size: 410px 410px;
+  }
+  div#formcontent{
+    max-width: 230px;
+    min-width: 230px;
+    margin-top: 13px;
+  }
+  img#form-logo{
+    width: 60%;
+    margin-left: 30px;
+  }
+  input#username{
+    min-width: 100px;
+    height: 16px;
+    font-size: 16px;
+  }
+  input#password{
+    min-width: 100px;
+    height: 16px;
+    font-size: 16px;
+  }
+  form#loginform{
+    margin: 0 auto;
+  }
+}
 #loginformdiv{
   width: 260px;
-  min-width: 390px;
-  height: 180px;
+  min-width: 600px;
+  height: 275px;
   margin: auto;
   overflow: hidden;
   background-image:url('../img/005-computer.svg');
   background-position: 50% 50% ;
   background-repeat: no-repeat;
-  background-size: 410px 410px;
+  background-size: 630px 630px;
 }
 #formcontent{
   position: relative;
   margin: 0 auto;
-  margin-top: 13px;
+  margin-top: 20px;
   width: 50%;
-  max-width: 230px;
-  min-width: 230px;
+  max-width: 350px;
+  min-width: 350px;
   //margin: auto;
   overflow: hidden;
 }
@@ -24,10 +54,10 @@ input.formtextinput{
   color:#DEC095;
   font-family: Acron;
   margin-bottom: 2px;
-  min-width: 100px;
-  height: 16px;
+  min-width: 200px;
+  height: 26px;
   background-color: #4d2600;
-  font-size: 16px;
+  font-size: 22px;
   padding: 1px;
   border: 0;
   padding-left: 2px;
@@ -49,19 +79,19 @@ input.formtextinput::placeholder {
   color:#1e110b;
 }
 #form-logo{
-  width: 60%;
-  margin-left: 30px;
+  width: 100%;
+  margin-left: 40px;
   height: auto;
 }
-#form-background{
+/* #form-background{
   margin: 0 auto;
-  /* background-color: red; */
+  background-color: red;
   width: 100%;
   z-index: -1000;
-}
+} */
 #loginform{
   max-width: 200px;
-  margin: 0 auto;
+  margin: 0 40px;
 }
 #list-div{
     width: 150px;
