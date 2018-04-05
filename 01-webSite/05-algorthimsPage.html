@@ -63,46 +63,90 @@
         <div id="algorithms">
               <div id="quicksort"  class="section">
                 <h1 class="color">Bubble Sort</h1>
-<p>
-Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
-<br/>
-Example:
-<br/>
-First Pass:
-<br/>
-( 5 1 4 2 8 ) <span class="color">–&gt;</span> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 &gt; 1.
-<br/>
-( 1 5 4 2 8 ) <span class="color">–&gt;</span>  ( 1 4 5 2 8 ), Swap since 5 &gt; 4
-<br/>
-( 1 4 5 2 8 ) <span class="color">–&gt;</span>  ( 1 4 2 5 8 ), Swap since 5 &gt; 2
-<br/>
-( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 4 2 5 8 ), Now, since these elements are already in order (8 &gt; 5), algorithm does not swap them.
-<br/>
+                  <p>
+                  Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+                  <br/>
+                  Example:
+                  <br/>
+                  First Pass:
+                  <br/>
+                  ( 5 1 4 2 8 ) <span class="color">–&gt;</span> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 &gt; 1.
+                  <br/>
+                  ( 1 5 4 2 8 ) <span class="color">–&gt;</span>  ( 1 4 5 2 8 ), Swap since 5 &gt; 4
+                  <br/>
+                  ( 1 4 5 2 8 ) <span class="color">–&gt;</span>  ( 1 4 2 5 8 ), Swap since 5 &gt; 2
+                  <br/>
+                  ( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 4 2 5 8 ), Now, since these elements are already in order (8 &gt; 5), algorithm does not swap them.
+                  <br/>
+                  Second Pass:
+                  <br/>
+                  ( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 4 2 5 8 )
+                  <br/>
+                  ( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 ), Swap since 4 &gt; 2
+                  <br/>
+                  ( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+                  <br/>
+                  ( 1 2 4 5 8 ) <span class="color">–&gt;</span>  ( 1 2 4 5 8 )
+                  <br/>
+                  Now, the array is already sorted, but our algorithm does not know if it is completed.
+                  <br/>
+                  The algorithm needs one whole pass without any swap to know it is sorted.
+                  <br/>
+                  Third Pass:
+                  <br/>
+                  ( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+                  <br/>
+                  ( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+                  <br/>
+                  ( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+                  <br/>
+                  ( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )</p>
+<div class="code">
+  <p class="padding10px"> <code>
+    // C program for implementation of Bubble sort<br/>
+    #include &lt;stdio.h&gt;<br/>
 
-Second Pass:
-<br/>
-( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 4 2 5 8 )
-<br/>
-( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 ), Swap since 4 &gt; 2
-<br/>
-( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
-<br/>
-( 1 2 4 5 8 ) <span class="color">–&gt;</span>  ( 1 2 4 5 8 )
-<br/>
-Now, the array is already sorted, but our algorithm does not know if it is completed.
-<br/>
-The algorithm needs one whole pass without any swap to know it is sorted.
-<br/>
+    void swap(int *xp, int *yp)<br/>
+    {<br/>
+      int temp = *xp;<br/>
+      *xp = *yp;<br/>
+      *yp = temp;<br/>
+    }<br/>
 
-Third Pass:
+    // A function to implement bubble sort<br/>
+    void bubbleSort(int arr[], int n)<br/>
+    {<br/>
+      int i, j;<br/>
+      for (i = 0; i &lt; n-1; i++)<br/>
+
+      // Last i elements are already in place<br/>
+      for (j = 0; j &lt; n-i-1; j++)<br/>
+      if (arr[j] &gt; arr[j+1])<br/>
+      swap(&arr[j], &arr[j+1]);<br/>
+    }
 <br/>
-( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+    /* Function to print an array */<br/>
+    void printArray(int arr[], int size)<br/>
+    {<br/>
+      int i;<br/>
+      for (i=0; i &lt; size; i++)<br/>
+      printf("%d ", arr[i]);<br/>
+      printf("n");<br/>
+    }<br/>
 <br/>
-( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
-<br/>
-( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
-<br/>
-( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )</p>
+    // Driver program to test above functions<br/>
+    int main()<br/>
+    {<br/>
+      int arr[] = {64, 34, 25, 12, 22, 11, 90};<br/>
+      int n = sizeof(arr)/sizeof(arr[0]);<br/>
+      bubbleSort(arr, n);<br/>
+      printf("Sorted array: \n");<br/>
+      printArray(arr, n);<br/>
+    }<br/>
+    return 0;<br/>
+  </code>
+</p>
+</div>
               </div>
         </div>
       </div>

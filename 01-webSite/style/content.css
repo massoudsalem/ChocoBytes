@@ -19,3 +19,16 @@ a{
   text-decoration: none;
   color:#F7D391;
 }
+.code{
+  font-family: monospace;
+  background-color: #1e110b;
+  margin: 20px auto;
+  border: 2px dashed #FFFBF0;
+}
+code{
+  font-family: monospace;
+  font-size: 11pt;
+}
+.padding10px{
+  padding: 10px;
+}
