@@ -1,0 +1,100 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style/puzzles.css">
+        <title>ChocoBytes</title>
+    </head>
+    <body>
+      <div class="puzzlesSelect">
+        <span id="p1" class="blocks-p" onclick="p1()">Puzzle1</span>
+        <span id="p2" class="blocks-p" onclick="p2()">Puzzle2</span>
+        <span id="p3" class="blocks-p" onclick="p3()">Puzzle3</span>
+        <span id="p4" class="blocks-p" onclick="p4()">Puzzle4</span>
+        <span id="p5" class="blocks-p" onclick="p5()">Puzzle5</span>
+      </div>
+        <!-- Puzzle1 -->
+        <div class="section">
+          <div id="Puzzle1" class="Puzzle-Hidden"><h1>Find ages of daughters</h1><p>Alok has three daughters. His friend Shyam wants to know the ages of his daughters. Alok gives him first hint.
+
+            1) The product of their ages is 72.
+
+            Shyam says this is not enough information Alok gives him a second hint.
+
+            2) The sum of their ages is equal to my house number.
+
+            Shyam goes out and look at the house number and tells “I still do not have enough information to determine the ages”.
+
+
+
+            Alok admits that Shyam can not guess and gives him the third hint
+
+            3) The oldest of the girls likes strawbarry ice-cream.
+
+            Shyam is able to guess after the third hint. Can you guess what are the ages of three daughters?</p>
+            <form>
+              <input type="radio" id="DivId11" class="DivRadio" name="answer" value=""><span id="SpanId11"></span><br>
+              <input type="radio" id="DivId12" class="DivRadio" name="answer" value=""><span id="SpanId12"></span><br>
+              <input type="radio" id="DivId13" class="DivRadio" name="answer" value=""><span id="SpanId13"></span><br>
+              <input type="radio" id="DivId14" class="DivRadio" name="answer" value=""><span id="SpanId14"></span><br>
+              <div id="answer1" class="AnswerButton" onclick="Answer1()">Ok</div>
+            </form>
+            <div id="DivAnswer1" class="answervalid"></div>
+          </div>
+        </div>
+        <!-- Puzzle2 -->
+        <div class="section">
+          <div id="Puzzle2" class="Puzzle-Hidden"><h1>Calculate total distance travelled by bee</h1><p>Two trains are on same track and they are coming toward each other. The speed of first train is 50 KMs/h and the speed of second train is 70 KMs/h. A bee starts flying between the trains when the distance between two trains is 100 KMs. The bee first flies from first train to second train. Once it reaches the second train, it immediately flies back to the second train … and so on until trains collide. Calculate the total distance traveled by the bee. Speed of bee is 40 KMs/h.</p>
+            <form>
+              <input type="radio" id="DivId21" class="DivRadio" name="answer" value=""><span id="SpanId21"></span><br>
+              <input type="radio" id="DivId22" class="DivRadio" name="answer" value=""><span id="SpanId22"></span><br>
+              <input type="radio" id="DivId23" class="DivRadio" name="answer" value=""><span id="SpanId23"></span><br>
+              <input type="radio" id="DivId24" class="DivRadio" name="answer" value=""><span id="SpanId24"></span><br>
+              <div id="answer2" class="AnswerButton" onclick="Answer2()">Ok</div>
+            </form>
+            <div id="DivAnswer2" class="answervalid"></div>
+          </div>
+        </div>
+        <!-- Puzzle3 -->
+      <div class="section">
+        <div id="Puzzle3" class="Puzzle-Hidden"><h1> Complete pattern </h1><p>5,8,13,21,...,...,...</p>
+            <form>
+              <input type="radio" id="DivId31" class="DivRadio" name="answer" value=""><span id="SpanId31"></span><br>
+              <input type="radio" id="DivId32" class="DivRadio" name="answer" value=""><span id="SpanId32"></span><br>
+              <input type="radio" id="DivId33" class="DivRadio" name="answer" value=""><span id="SpanId33"></span><br>
+              <input type="radio" id="DivId34" class="DivRadio" name="answer" value=""><span id="SpanId34"></span><br>
+              <div id="answer3" class="AnswerButton" onclick="Answer3()">Ok</div>
+            </form>
+                <div id="DivAnswer3" class="answervalid"></div>
+          </div>
+      </div>
+        <!-- Puzzle4 -->
+    <div class="section">
+    <div id="Puzzle4" class="Puzzle-Hidden"><h1>Complete pattern</h1><p>2,3,5,7,...</p>
+        <form>
+          <input type="radio" id="DivId41" class="DivRadio" name="answer" value=""><span id="SpanId41"></span><br>
+          <input type="radio" id="DivId42" class="DivRadio" name="answer" value=""><span id="SpanId42"></span><br>
+          <input type="radio" id="DivId43" class="DivRadio" name="answer" value=""><span id="SpanId43"></span><br>
+          <input type="radio" id="DivId44" class="DivRadio" name="answer" value=""><span id="SpanId44"></span><br>
+          <div id="answer4" class="AnswerButton" onclick="Answer4()">Ok</div>
+        </form>
+            <div id="DivAnswer4" class="answervalid"></div>
+      </div>
+    </div>
+        <!-- Puzzle5 -->
+        <div class="section">
+
+        <div id="Puzzle5" class="Puzzle-Hidden"><h1>Discover that</h1><p>Hard as rock but one word broke me, who am I?</p>
+          <form>
+            <input type="radio" id="DivId51" class="DivRadio" name="answer" value=""><span id="SpanId51"></span><br>
+            <input type="radio" id="DivId52" class="DivRadio" name="answer" value=""><span id="SpanId52"></span><br>
+            <input type="radio" id="DivId53" class="DivRadio" name="answer" value=""><span id="SpanId53"></span><br>
+            <input type="radio" id="DivId54" class="DivRadio" name="answer" value=""><span id="SpanId54"></span><br>
+            <div id="answer5" class="AnswerButton" onclick="Answer5()">Ok</div>
+          </form>
+              <div id="DivAnswer5" class="answervalid"></div>
+        </div>
+      </div>
+
+        <script src="./script/puzzles.js"></script>
+    </body>
+</html>

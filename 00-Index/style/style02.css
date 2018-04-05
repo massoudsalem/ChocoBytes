@@ -228,6 +228,7 @@ a.navlistitem:active{
 }
 #blocks-div{
     margin: 0 auto;
+    margin-top: 15px;
     width: 100%;
     max-width: 600px;
     display: flex;

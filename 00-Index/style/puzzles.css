@@ -1,0 +1,74 @@
+.Puzzle-Hidden{
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+.Puzzle-Visibal{
+    width: 100%;
+    height: auto;
+    visibility: visible;
+    font-size: 20px;
+}
+.answerbutton{
+  background-color: #1e110b;
+  font-family: Acron;
+  border: 0;
+  padding: 2px;
+  text-align: center;
+  color: #FFFBF0;
+  border-bottom: 3px solid #cc925d;
+}
+.answerbutton{
+  color:#F7D391;
+}
+input[type="radio"]{
+  border: 1px solid black;
+  background-color: #FFFBF0;
+}
+/* .hide-p{
+    cursor: pointer;
+    margin: 10px;
+    width: 60px;
+    background-color: aqua;
+}
+.DivAnswer-0,.DivAnswer-1{
+width: 0;
+height: 0;
+font-size: 2em;
+z-index: 1;
+position: fixed;
+right: 0;
+top: 50%;
+overflow: hidden;
+color: aqua;
+background-color: rebeccapurple;
+}
+.blocks-p{
+    cursor: pointer;
+    margin: 10px;
+    width: 60px;
+    background-color: aqua;
+}
+.fullblock-p{
+    cursor: pointer;
+    margin: 10px;
+    width: 60px;
+    background-color: aqua;
+}
+
+.DivRadio,.AnswerButton{
+    border: 5px solid black;
+    margin: 20px;
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.AnswerButton{
+    width: 150px;
+}
+.DivAnswer-1{
+    width: 200px;
+    height: 150px;
+} */

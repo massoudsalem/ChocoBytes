@@ -6,7 +6,7 @@ function OpenList() {
     "use strict";
     if (open > close){
     document.getElementById("list-id").style.height = "50%";
-    document.getElementById("list-id").style.width = "20%";
+    document.getElementById("list-id").style.width = "300px";
             close = close +1;
     } else {
         document.getElementById("list-id").style.height = "0%";
@@ -41,281 +41,109 @@ window.onscroll = function Navbar() {
     }
 };
 //End...
+
+//Blocks.....
 var x1 = 1,
-    y1 = 0,
-    x2 = 1,
-    y2 = 0,
-    x3 = 1,
-    y3 = 0,
-    x4 = 1,
-    y4 = 0,
-    x5 = 1,
-    y5 = 0,
-    x6 = 1,
-    y6 = 0;
+    y1 = 0;
 function Cplusplus() {
     "use strict";
     if (x1 > y1) {
-        document.getElementById("Cplusplus").style.width = "30%";
-        document.getElementById("Cplusplus").style.height = "50%";
-        document.getElementById("Cplusplus").style.marginLeft = "35%";
-        document.getElementById("Java").style.width = "0";
-        document.getElementById("Csharp").style.width = "0";
-        document.getElementById("Scratch").style.width = "0";
-        document.getElementById("Web").style.width = "0";
-        document.getElementById("APDim").style.width = "0";
-        document.getElementById("Java").style.height = "0";
-        document.getElementById("Csharp").style.height = "0";
-        document.getElementById("Scratch").style.height = "0";
-        document.getElementById("Web").style.height = "0";
-        document.getElementById("APDim").style.height = "0";
-        document.getElementById("Java").style.marginLeft = "0";
-        document.getElementById("Csharp").style.marginLeft = "0";
-        document.getElementById("Scratch").style.marginLeft = "0";
-        document.getElementById("Web").style.marginLeft = "0";
-        document.getElementById("APDim").style.marginLeft = "0";
-        y1 = y1 +1;
+        document.getElementById("Cplusplus").className = "fullblock";
+        document.getElementById("Java").className = "hide";
+        document.getElementById("Csharp").className = "hide";
+        document.getElementById("Scratch").className = "hide";
+        document.getElementById("Web").className = "hide";
+        y1 = 1;
+        x1 = 0;
     } else {
-        document.getElementById("APDim").style.width = "60px";
-        document.getElementById("APDim").style.height = "60px";
-        document.getElementById("Java").style.width = "60px";
-        document.getElementById("Csharp").style.width = "60px";
-        document.getElementById("Scratch").style.width = "60px";
-        document.getElementById("Web").style.width = "60px";
-        document.getElementById("Cplusplus").style.width = "60px";
-        document.getElementById("Java").style.height = "60px";
-        document.getElementById("Csharp").style.height = "60px";
-        document.getElementById("Scratch").style.height = "60px";
-        document.getElementById("Web").style.height = "60px";
-        document.getElementById("Cplusplus").style.height = "60px";
-        document.getElementById("APDim").style.margin = "9.5px";
-        document.getElementById("Java").style.margin = "9.5px";
-        document.getElementById("Csharp").style.margin = "9.5px";
-        document.getElementById("Scratch").style.margin = "9.5px";
-        document.getElementById("Web").style.margin = "9.5px";
-        document.getElementById("Cplusplus").style.margin = "9.5px";
-        x1 = x1 +1;
+        document.getElementById("Cplusplus").className = "blocks";
+        document.getElementById("Java").className = "blocks";
+        document.getElementById("Csharp").className = "blocks";
+        document.getElementById("Scratch").className = "blocks";
+        document.getElementById("Web").className = "blocks";
+        x1 = 1;
+        y1 = 0;
     }
 
 }
 function Java() {
     "use strict";
-    if (x2 > y2) {
-        document.getElementById("Java").style.width = "30%";
-    document.getElementById("Java").style.height = "50%";
-    document.getElementById("Java").style.marginLeft = "35%";
-    document.getElementById("Cplusplus").style.width = "0";
-    document.getElementById("Csharp").style.width = "0";
-    document.getElementById("Scratch").style.width = "0";
-    document.getElementById("Web").style.width = "0";
-    document.getElementById("APDim").style.width = "0";
-    document.getElementById("Cplusplus").style.height = "0";
-    document.getElementById("Csharp").style.height = "0";
-    document.getElementById("Scratch").style.height = "0";
-    document.getElementById("Web").style.height = "0";
-    document.getElementById("APDim").style.height = "0";
-    document.getElementById("Cplusplus").style.marginLeft = "0";
-    document.getElementById("Csharp").style.marginLeft = "0";
-    document.getElementById("Scratch").style.marginLeft = "0";
-    document.getElementById("Web").style.marginLeft = "0";
-    document.getElementById("APDim").style.marginLeft = "0";
-        y2 = y2 +1;
+    if (x1 > y1) {
+        document.getElementById("Cplusplus").className = "hide";
+        document.getElementById("Java").className = "fullblock";
+        document.getElementById("Csharp").className = "hide";
+        document.getElementById("Scratch").className = "hide";
+        document.getElementById("Web").className = "hide";
+        y1 = 1;
+        x1 = 0;
     } else {
-        document.getElementById("APDim").style.width = "60px";
-    document.getElementById("APDim").style.height = "60px";
-    document.getElementById("Java").style.width = "60px";
-    document.getElementById("Csharp").style.width = "60px";
-    document.getElementById("Scratch").style.width = "60px";
-    document.getElementById("Web").style.width = "60px";
-    document.getElementById("Cplusplus").style.width = "60px";
-    document.getElementById("Java").style.height = "60px";
-    document.getElementById("Csharp").style.height = "60px";
-    document.getElementById("Scratch").style.height = "60px";
-    document.getElementById("Web").style.height = "60px";
-    document.getElementById("Cplusplus").style.height = "60px";
-    document.getElementById("APDim").style.margin = "9.5px";
-    document.getElementById("Java").style.margin = "9.5px";
-    document.getElementById("Csharp").style.margin = "9.5px";
-    document.getElementById("Scratch").style.margin = "9.5px";
-    document.getElementById("Web").style.margin = "9.5px";
-    document.getElementById("Cplusplus").style.margin = "9.5px";
-        x2 = x2 +1;
+        document.getElementById("Cplusplus").className = "blocks";
+        document.getElementById("Java").className = "blocks";
+        document.getElementById("Csharp").className = "blocks";
+        document.getElementById("Scratch").className = "blocks";
+        document.getElementById("Web").className = "blocks";
+        x1 = 1;
+        y1 = 0;
     }
 
 }
 function Csharp() {
     "use strict";
-    if (x3 > y3) {
-    document.getElementById("Csharp").style.width = "30%";
-    document.getElementById("Csharp").style.height = "50%";
-    document.getElementById("Csharp").style.marginLeft = "35%";
-    document.getElementById("Java").style.width = "0";
-    document.getElementById("Cplusplus").style.width = "0";
-    document.getElementById("Scratch").style.width = "0";
-    document.getElementById("Web").style.width = "0";
-    document.getElementById("APDim").style.width = "0";
-    document.getElementById("Java").style.height = "0";
-    document.getElementById("Cplusplus").style.height = "0";
-    document.getElementById("Scratch").style.height = "0";
-    document.getElementById("Web").style.height = "0";
-    document.getElementById("APDim").style.height = "0";
-    document.getElementById("Java").style.marginLeft = "0";
-    document.getElementById("Cplusplus").style.marginLeft = "0";
-    document.getElementById("Scratch").style.marginLeft = "0";
-    document.getElementById("Web").style.marginLeft = "0";
-    document.getElementById("APDim").style.marginLeft = "0";
-        y3 = y3 +1;
+    if (x1 > y1) {
+        document.getElementById("Cplusplus").className = "hide";
+        document.getElementById("Java").className = "hide";
+        document.getElementById("Csharp").className = "fullblock";
+        document.getElementById("Scratch").className = "hide";
+        document.getElementById("Web").className = "hide";
+        y1 = 1;
+        x1 = 0;
     } else {
-        document.getElementById("APDim").style.width = "60px";
-    document.getElementById("APDim").style.height = "60px";
-    document.getElementById("Java").style.width = "60px";
-    document.getElementById("Csharp").style.width = "60px";
-    document.getElementById("Scratch").style.width = "60px";
-    document.getElementById("Web").style.width = "60px";
-    document.getElementById("Cplusplus").style.width = "60px";
-    document.getElementById("Java").style.height = "60px";
-    document.getElementById("Csharp").style.height = "60px";
-    document.getElementById("Scratch").style.height = "60px";
-    document.getElementById("Web").style.height = "60px";
-    document.getElementById("Cplusplus").style.height = "60px";
-    document.getElementById("APDim").style.margin = "9.5px";
-    document.getElementById("Java").style.margin = "9.5px";
-    document.getElementById("Csharp").style.margin = "9.5px";
-    document.getElementById("Scratch").style.margin = "9.5px";
-    document.getElementById("Web").style.margin = "9.5px";
-    document.getElementById("Cplusplus").style.margin = "9.5px";
-        x3 = x3 +1;
+        document.getElementById("Cplusplus").className = "blocks";
+        document.getElementById("Java").className = "blocks";
+        document.getElementById("Csharp").className = "blocks";
+        document.getElementById("Scratch").className = "blocks";
+        document.getElementById("Web").className = "blocks";
+        x1 = 1;
+        y1 = 0;
     }
 }
 function Scratch() {
     "use strict";
-    if (x4 > y4) {
-    document.getElementById("Scratch").style.width = "30%";
-    document.getElementById("Scratch").style.height = "50%";
-    document.getElementById("Scratch").style.marginLeft = "35%";
-    document.getElementById("Java").style.width = "0";
-    document.getElementById("Csharp").style.width = "0";
-    document.getElementById("Cplusplus").style.width = "0";
-    document.getElementById("Web").style.width = "0";
-    document.getElementById("APDim").style.width = "0";
-    document.getElementById("Java").style.height = "0";
-    document.getElementById("Csharp").style.height = "0";
-    document.getElementById("Cplusplus").style.height = "0";
-    document.getElementById("Web").style.height = "0";
-    document.getElementById("APDim").style.height = "0";
-    document.getElementById("Java").style.marginLeft = "0";
-    document.getElementById("Csharp").style.marginLeft = "0";
-    document.getElementById("Cplusplus").style.marginLeft = "0";
-    document.getElementById("Web").style.marginLeft = "0";
-    document.getElementById("APDim").style.marginLeft = "0";
-        y4 = y4 +1;
+    if (x1 > y1) {
+        document.getElementById("Cplusplus").className = "hide";
+        document.getElementById("Java").className = "hide";
+        document.getElementById("Csharp").className = "hide";
+        document.getElementById("Scratch").className = "fullblock";
+        document.getElementById("Web").className = "hide";
+        y1 = 1;
+        x1 = 0;
     } else {
-        document.getElementById("APDim").style.width = "60px";
-    document.getElementById("APDim").style.height = "60px";
-    document.getElementById("Java").style.width = "60px";
-    document.getElementById("Csharp").style.width = "60px";
-    document.getElementById("Scratch").style.width = "60px";
-    document.getElementById("Web").style.width = "60px";
-    document.getElementById("Cplusplus").style.width = "60px";
-    document.getElementById("Java").style.height = "60px";
-    document.getElementById("Csharp").style.height = "60px";
-    document.getElementById("Scratch").style.height = "60px";
-    document.getElementById("Web").style.height = "60px";
-    document.getElementById("Cplusplus").style.height = "60px";
-    document.getElementById("APDim").style.margin = "9.5px";
-    document.getElementById("Java").style.margin = "9.5px";
-    document.getElementById("Csharp").style.margin = "9.5px";
-    document.getElementById("Scratch").style.margin = "9.5px";
-    document.getElementById("Web").style.margin = "9.5px";
-    document.getElementById("Cplusplus").style.margin = "9.5px";
-        x4 = x4 +1;
+        document.getElementById("Cplusplus").className = "blocks";
+        document.getElementById("Java").className = "blocks";
+        document.getElementById("Csharp").className = "blocks";
+        document.getElementById("Scratch").className = "blocks";
+        document.getElementById("Web").className = "blocks";
+        x1 = 1;
+        y1 = 0;
     }
 }
 function Web() {
     "use strict";
-    if (x5 > y5) {
-    document.getElementById("Web").style.width = "30%";
-    document.getElementById("Web").style.height = "50%";
-    document.getElementById("Web").style.marginLeft = "35%";
-    document.getElementById("Java").style.width = "0";
-    document.getElementById("Csharp").style.width = "0";
-    document.getElementById("Scratch").style.width = "0";
-    document.getElementById("Cplusplus").style.width = "0";
-    document.getElementById("APDim").style.width = "0";
-    document.getElementById("Java").style.height = "0";
-    document.getElementById("Csharp").style.height = "0";
-    document.getElementById("Scratch").style.height = "0";
-    document.getElementById("Cplusplus").style.height = "0";
-    document.getElementById("APDim").style.height = "0";
-    document.getElementById("Java").style.marginLeft = "0";
-    document.getElementById("Csharp").style.marginLeft = "0";
-    document.getElementById("Scratch").style.marginLeft = "0";
-    document.getElementById("Cplusplus").style.marginLeft = "0";
-    document.getElementById("APDim").style.marginLeft = "0";
-        y5 = y5 +1;
+    if (x1 > y1) {
+        document.getElementById("Cplusplus").className = "hide";
+        document.getElementById("Java").className = "hide";
+        document.getElementById("Csharp").className = "hide";
+        document.getElementById("Scratch").className = "hide";
+        document.getElementById("Web").className = "fullblock";
+        y1 = 1;
+        x1 = 0;
     } else {
-        document.getElementById("APDim").style.width = "60px";
-    document.getElementById("APDim").style.height = "60px";
-    document.getElementById("Java").style.width = "60px";
-    document.getElementById("Csharp").style.width = "60px";
-    document.getElementById("Scratch").style.width = "60px";
-    document.getElementById("Web").style.width = "60px";
-    document.getElementById("Cplusplus").style.width = "60px";
-    document.getElementById("Java").style.height = "60px";
-    document.getElementById("Csharp").style.height = "60px";
-    document.getElementById("Scratch").style.height = "60px";
-    document.getElementById("Web").style.height = "60px";
-    document.getElementById("Cplusplus").style.height = "60px";
-    document.getElementById("APDim").style.margin = "9.5px";
-    document.getElementById("Java").style.margin = "9.5px";
-    document.getElementById("Csharp").style.margin = "9.5px";
-    document.getElementById("Scratch").style.margin = "9.5px";
-    document.getElementById("Web").style.margin = "9.5px";
-    document.getElementById("Cplusplus").style.margin = "9.5px";
-        x5 = x5 +1;
-    }
-}
-function APDim() {
-    "use strict";
-    if (x6 > y6) {
-    document.getElementById("APDim").style.width = "30%";
-    document.getElementById("APDim").style.height = "50%";
-    document.getElementById("APDim").style.marginLeft = "35%";
-    document.getElementById("Java").style.width = "0";
-    document.getElementById("Csharp").style.width = "0";
-    document.getElementById("Scratch").style.width = "0";
-    document.getElementById("Web").style.width = "0";
-    document.getElementById("Cplusplus").style.width = "0";
-    document.getElementById("Java").style.height = "0";
-    document.getElementById("Csharp").style.height = "0";
-    document.getElementById("Scratch").style.height = "0";
-    document.getElementById("Web").style.height = "0";
-    document.getElementById("Cplusplus").style.height = "0";
-    document.getElementById("Java").style.marginLeft = "0";
-    document.getElementById("Csharp").style.marginLeft = "0";
-    document.getElementById("Scratch").style.marginLeft = "0";
-    document.getElementById("Web").style.marginLeft = "0";
-    document.getElementById("Cplusplus").style.marginLeft = "0";
-        y6 = y6 +1;
-    } else {
-        document.getElementById("APDim").style.width = "60px";
-    document.getElementById("APDim").style.height = "60px";
-    document.getElementById("Java").style.width = "60px";
-    document.getElementById("Csharp").style.width = "60px";
-    document.getElementById("Scratch").style.width = "60px";
-    document.getElementById("Web").style.width = "60px";
-    document.getElementById("Cplusplus").style.width = "60px";
-    document.getElementById("Java").style.height = "60px";
-    document.getElementById("Csharp").style.height = "60px";
-    document.getElementById("Scratch").style.height = "60px";
-    document.getElementById("Web").style.height = "60px";
-    document.getElementById("Cplusplus").style.height = "60px";
-    document.getElementById("APDim").style.margin = "9.5px";
-    document.getElementById("Java").style.margin = "9.5px";
-    document.getElementById("Csharp").style.margin = "9.5px";
-    document.getElementById("Scratch").style.margin = "9.5px";
-    document.getElementById("Web").style.margin = "9.5px";
-    document.getElementById("Cplusplus").style.margin = "9.5px";
-        x6 = x6 +1;
+        document.getElementById("Cplusplus").className = "blocks";
+        document.getElementById("Java").className = "blocks";
+        document.getElementById("Csharp").className = "blocks";
+        document.getElementById("Scratch").className = "blocks";
+        document.getElementById("Web").className = "blocks";
+        x1 = 1;
+        y1 = 0;
     }
 }
