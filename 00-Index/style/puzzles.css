@@ -4,10 +4,16 @@
     height: 0;
 }
 .Puzzle-Visibal{
-    width: 100%;
+    background-color: #321400;
+    margin-bottom: 1.5em;
+    color: #FFFBF0;
+    padding: 20px;
+    border: 5px solid #cc925d;
+    border-radius: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
     height: auto;
     visibility: visible;
-    font-size: 20px;
 }
 .answerbutton{
   background-color: #1e110b;
@@ -17,6 +23,8 @@
   text-align: center;
   color: #FFFBF0;
   border-bottom: 3px solid #cc925d;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 .answerbutton{
   color:#F7D391;
