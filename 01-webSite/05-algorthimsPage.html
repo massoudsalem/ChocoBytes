@@ -49,7 +49,7 @@
           <a href="04-puzzlesPage.html">Puzzles</a>
         </div>
         <div id="blocks-div">
-          <div class="center-blocks">
+          <div class="center">
             <div class="blocks" id="Cplusplus" onclick="Cplusplus()">C++</div>
             <div class="blocks" id="Java" onclick="Java()">Java</div>
             <div class="blocks" id="Csharp" onclick="Csharp()">C#</div>
@@ -58,14 +58,55 @@
           </div>
             <!--<div class="blocks" id="APDim" onclick="APDim()">APDim</div>-->
         </div>
-        <content>
-          <div id="bta3">
-            <div class="section">
-              <h1 class="color">This website is under construction</h1>
-              <img style="margin: 10px; border: 2px dashed white;" src="./img/websiteUnderConstruction.svg" alt="websiteUnderConstruction"/>
-            </div>
-          </div>
-        </content>
+    <content>
+      <div id="bta3">
+        <div id="algorithms">
+              <div id="quicksort"  class="section">
+                <h1 class="color">Bubble Sort</h1>
+<p>
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+<br/>
+Example:
+<br/>
+First Pass:
+<br/>
+( 5 1 4 2 8 ) <span class="color">–&gt;</span> ( 1 5 4 2 8 ), Here, algorithm compares the first two elements, and swaps since 5 &gt; 1.
+<br/>
+( 1 5 4 2 8 ) <span class="color">–&gt;</span>  ( 1 4 5 2 8 ), Swap since 5 &gt; 4
+<br/>
+( 1 4 5 2 8 ) <span class="color">–&gt;</span>  ( 1 4 2 5 8 ), Swap since 5 &gt; 2
+<br/>
+( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 4 2 5 8 ), Now, since these elements are already in order (8 &gt; 5), algorithm does not swap them.
+<br/>
+
+Second Pass:
+<br/>
+( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 4 2 5 8 )
+<br/>
+( 1 4 2 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 ), Swap since 4 &gt; 2
+<br/>
+( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+<br/>
+( 1 2 4 5 8 ) <span class="color">–&gt;</span>  ( 1 2 4 5 8 )
+<br/>
+Now, the array is already sorted, but our algorithm does not know if it is completed.
+<br/>
+The algorithm needs one whole pass without any swap to know it is sorted.
+<br/>
+
+Third Pass:
+<br/>
+( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+<br/>
+( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+<br/>
+( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )
+<br/>
+( 1 2 4 5 8 ) <span class="color">–&gt;</span> ( 1 2 4 5 8 )</p>
+              </div>
+        </div>
+      </div>
+    </content>
         <script src="script/scripting.js" onclick=""></script>
     </body>
 </html>
