@@ -39,9 +39,14 @@ document.getElementById('SpanId1' + y).innerHTML = '1 , 4 And 18';
 document.getElementById('SpanId1' + z).innerHTML = '2 , 2 And 18';
 function Answer1() {
     "use strict";
-    var Chose1 = document.getElementById('DivId1' + w);
+    var Chose1 = document.getElementById('DivId1' + w),
+        Chose2 = document.getElementById('DivId1' + y),
+        Chose3 = document.getElementById('DivId1' + x),
+        Chose4 = document.getElementById('DivId1' + z);
     document.getElementById("DivAnswer1").classList = "DivAnswer-1";
-    if (Chose1.checked === true) {
+    if(Chose1.checked === false && Chose2.checked === false && Chose3.checked === false && Chose4.checked === false) {
+       document.getElementById("DivAnswer1").innerHTML = "Please select an answer";
+       } else if (Chose1.checked === true) {
         document.getElementById("DivAnswer1").innerHTML = "Correct answer";
     } else {
         document.getElementById("DivAnswer1").innerHTML = "Wrong answer";
@@ -54,9 +59,14 @@ document.getElementById('SpanId2' + y).innerHTML = '34.333';
 document.getElementById('SpanId2' + z).innerHTML = '32.333';
 function Answer2() {
     "use strict";
-    var Chose2 = document.getElementById('DivId2' + x);
+    var Chose1 = document.getElementById('DivId2' + x),
+        Chose2 = document.getElementById('DivId2' + y),
+        Chose3 = document.getElementById('DivId2' + w),
+        Chose4 = document.getElementById('DivId2' + z);
     document.getElementById("DivAnswer2").classList = "DivAnswer-1";
-    if (Chose2.checked === true) {
+    if(Chose1.checked === false && Chose2.checked === false && Chose3.checked === false && Chose4.checked === false) {
+       document.getElementById("DivAnswer2").innerHTML = "Please select an answer";
+       } else if (Chose1.checked === true) {
         document.getElementById("DivAnswer2").innerHTML = "Correct answer";
     } else {
         document.getElementById("DivAnswer2").innerHTML = "Wrong answer";
@@ -69,9 +79,14 @@ document.getElementById('SpanId3' + y).innerHTML = '32,43.54';
 document.getElementById('SpanId3' + z).innerHTML = '34,54,99';
 function Answer3() {
     "use strict";
-    var Chose1 = document.getElementById('DivId3' + w);
+    var Chose1 = document.getElementById('DivId3' + w),
+        Chose2 = document.getElementById('DivId3' + y),
+        Chose3 = document.getElementById('DivId3' + x),
+        Chose4 = document.getElementById('DivId3' + z);
     document.getElementById("DivAnswer3").classList = "DivAnswer-1";
-    if (Chose1.checked === true) {
+    if(Chose1.checked === false && Chose2.checked === false && Chose3.checked === false && Chose4.checked === false) {
+       document.getElementById("DivAnswer3").innerHTML = "Please select an answer";
+       } else if (Chose1.checked === true) {
         document.getElementById("DivAnswer3").innerHTML = "Correct answer";
     } else {
         document.getElementById("DivAnswer3").innerHTML = "Wrong answer";
@@ -84,9 +99,14 @@ document.getElementById('SpanId4' + w).innerHTML = '10';
 document.getElementById('SpanId4' + z).innerHTML = '8';
 function Answer4() {
     "use strict";
-    var Chose1 = document.getElementById('DivId4' + y);
+    var Chose1 = document.getElementById('DivId4' + y),
+        Chose2 = document.getElementById('DivId4' + w),
+        Chose3 = document.getElementById('DivId4' + x),
+        Chose4 = document.getElementById('DivId4' + z);
     document.getElementById("DivAnswer4").classList = "DivAnswer-1";
-    if (Chose1.checked === true) {
+    if(Chose1.checked === false && Chose2.checked === false && Chose3.checked === false && Chose4.checked === false) {
+       document.getElementById("DivAnswer4").innerHTML = "Please select an answer";
+       } else if (Chose1.checked === true) {
         document.getElementById("DivAnswer4").innerHTML = "Correct answer";
     } else {
         document.getElementById("DivAnswer4").innerHTML = "Wrong answer";
@@ -99,9 +119,14 @@ document.getElementById('SpanId5' + y).innerHTML = 'Wave';
 document.getElementById('SpanId5' + w).innerHTML = 'Egyptian citizen';
 function Answer5() {
     "use strict";
-    var Chose1 = document.getElementById('DivId5' + z);
+    var Chose1 = document.getElementById('DivId5' + z),
+        Chose2 = document.getElementById('DivId5' + y),
+        Chose3 = document.getElementById('DivId5' + x),
+        Chose4 = document.getElementById('DivId5' + w);
     document.getElementById("DivAnswer5").classList = "DivAnswer-1";
-    if (Chose1.checked === true) {
+    if(Chose1.checked === false && Chose2.checked === false && Chose3.checked === false && Chose4.checked === false) {
+       document.getElementById("DivAnswer5").innerHTML = "Please select an answer";
+       } else if (Chose1.checked === true) {
         document.getElementById("DivAnswer5").innerHTML = "Correct answer";
     } else {
         document.getElementById("DivAnswer5").innerHTML = "Wrong answer";

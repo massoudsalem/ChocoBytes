@@ -2,6 +2,7 @@
     overflow: hidden;
     width: 0;
     height: 0;
+    transition:0.5s;
 }
 .Puzzle-Visibal{
     background-color: #321400;
@@ -14,6 +15,7 @@
     margin-right: 40px;
     height: auto;
     visibility: visible;
+    transition:0.5s;
 }
 .answerbutton{
   background-color: #1e110b;

@@ -247,17 +247,20 @@ a.navlistitem:active{
     transition: .7s;
     color: #cc925d;
     overflow: hidden;
+    transition: 0.5s;
 }
 .blocks:hover{
     opacity: 0.8;
 }
 .hide{
-  display: none;
-  visibility: hidden;
+  transition: 0.5s;
   width: 0;
   height: 0;
+  visibility: hidden;
+  display: none;
 }
 .fullblock{
+  transition: 0.5s;
   min-width:250px;
   max-width: 500px;
   width: 100%;
