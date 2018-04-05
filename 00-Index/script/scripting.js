@@ -5,7 +5,7 @@ var open = 1,
 function OpenList() {
     "use strict";
     if (open > close){
-    document.getElementById("list-id").style.height = "50%";
+    document.getElementById("list-id").style.height = "400px";
     document.getElementById("list-id").style.width = "300px";
             close = close +1;
     } else {

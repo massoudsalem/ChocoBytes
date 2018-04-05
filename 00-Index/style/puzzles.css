@@ -25,12 +25,18 @@
   border-bottom: 3px solid #cc925d;
   margin: 0 auto;
   margin-top: 10px;
+  cursor: pointer;
 }
-.answerbutton{
+.answerbutton:hover{
   color:#F7D391;
+  opacity: 0.8;
+}
+.answerbutton:active{
+  color: black;
 }
 input[type="radio"]{
   border: 1px solid black;
+  cursor: pointer;
   background-color: #FFFBF0;
 }
 /* .hide-p{
