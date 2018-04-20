@@ -29,19 +29,19 @@ also the site has a branch (how to program) for children
 To teach programming (**using MIT tools : App inventor and scratch**) for _**children**_
 and then they can enroll the beginners courses
 
-**To run the Project**
- -At first you shoud excute the few lines in the file **Chocobytes_db.sql** to create the database for the project.
+### To run the Project
+ * At first you shoud excute the few lines in the file **Chocobytes_db.sql** to create the database for the project.
   You can do this using MySQL workbench or using mysql command line 
 
- -Then run the file **main.py**  
+ * Then run the file **main.py**  
   You can do this using command  python main.py 
   do not forget to change username and password in the folowing line inside the file to yours
-       db = MySQLdb.connect(host="localhost", user="root", passwd="3328", db="chocobytes")
+    >  ` db = MySQLdb.connect(host="localhost", user="root", passwd="3328", db="chocobytes") `
 
- -Finally goto your browser and open the **localhost** to find the project working .
+ * Finally goto your browser and open the **localhost** to find the project working .
 
- -Make sure you have installed the following packages
-     -MySQLdb
-	 -flask
-	 you can use the command   pip install packageName
+ * Make sure you have installed the following packages
+     * MySQLdb
+     * flask
+	 you can use the command  ` pip install packageName`   
 	 
