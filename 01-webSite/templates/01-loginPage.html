@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>ChocoBytes</title>
+        <meta charset = "utf-8"/>
+        <meta name="content" content="ChocoBtytes html page"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style02.css') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/login.css') }}">
+
+    </head>
+    <body>
+      <!-- The Header -->
+      <header id="head">
+        <div class="div-in-header">
+          <div class="logo">
+
+            <img src="{{ url_for('static',filename='img/logo.svg') }}" alt="languages" id="logo">
+          </div>
+          <div class="center-header">
+
+            <img src="{{ url_for('static',filename='img/smile.svg') }}" alt="smile" id="smileleft">
+            <span id="wb-name">ChocoBytes</span>
+            <img src="{{ url_for('static',filename='img/smile.svg') }}" alt="smile" id="smileright">
+          </div>
+          <div class="left-header">
+
+            <img src="{{ url_for('static',filename='img/lang.svg') }}" alt="languages" id="lang">
+          </div>
+        </div>
+      </header>
+      <nav id="navbar">
+        <div class="navbar-list-container">
+          <ul class="navbar-list">
+            <li><a class="navlistitem" href="Button1l">Button1</a></li>
+            <li><a class="navlistitem" href="Button2">Button2</a> </li>
+            <li><a class="navlistitem" href="Button3">Button3</a></li>
+          </ul>
+        </div>
+        <form class="search-bar">
+          <input class="search" type="text" placeholder="Search..." required>
+          <input class="search-btn" type="image" src="{{ url_for('static',filename='img/search.svg') }}" value="Search">
+        </form>
+      </nav>
+      <!-- end of header -->
+      <!-- Dynamiclist -->
+      <script src="{{ url_for('static',filename='script/scripting.js') }}"></script>{
+      <div id="list-div"><span id="list-span" onclick="OpenList()">&#9776; Menu</span></div>
+      <div id="list-id" class="list-class">
+          <a href="C++">C++</a>
+          <a href="Java">Java</a>
+          <a href="cSharp">C#</a>
+          <a href="Algorithms">Algorithms</a>
+          <a href="Web">Web</a>
+          <a href="Puzzles">Puzzles</a>
+      </div>
+      <!-- Dynamiclist -->
+    
+     {% if reg=='login' %}
+     <!-- loginForm -->
+      <div id="loginformdiv">
+        <!--<img src="./img/005-computer.svg" alt="languages" id="form-background" >-->
+        <div id="formcontent">
+          <form action="/login" method="POST" id="loginform">
+            <img src="{{ url_for('static',filename='img/logo.svg') }}" alt="languages" id="form-logo" >
+            <label>{{msg}}</label>
+            <input class="formtextinput" id="username" type="text" name="UserName" placeholder="user name">
+            <input class="formtextinput" id="password" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            <input id="submitstyle" type="submit" value="Log In">
+          </form>
+        </div>
+      </div>
+    <!-- loginForm -->
+      {% elif reg=='signup' %}
+      <!-- SignUpForm -->
+      <div id="">
+        <!--<img src="./img/005-computer.svg" alt="languages" id="form-background" >-->
+        <div id="formcontent">
+          <form action="/signup" method="POST" id="loginform">
+            <img src="{{ url_for('static',filename='img/logo.svg') }}" alt="languages" id="form-logo" >
+            <label>{{msg}}</label>
+            <input class="formtextinput" id="username" type="text" name="UserName" placeholder="user name">
+            <input class="formtextinput" id="firstname" type="text" name="firstName" placeholder="first name">
+            <input class="formtextinput" id="lastname" type="text" name="lastName" placeholder="last name">
+            <input class="formtextinput" id="email" type="email" name="Email" placeholder="someone@example.com">
+            <input class="formtextinput" id="password" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            <input class="formtextinput" id="password" type="password" name="Password2" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            <input id="submitstyle" type="submit" value="Sign Up">
+          </form>
+        </div>
+      </div>
+    <!-- SignUpForm -->
+      {% endif %}
+      
+
+    </body>
+</html>

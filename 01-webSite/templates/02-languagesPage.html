@@ -1,0 +1,95 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>ChocoBytes</title>
+        <meta charset = "utf-8"/>
+        <meta name="content" content="ChocoBtytes html page"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style02.css') }}">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/content.css') }}">
+    </head>
+    <body>
+      <!-- The Header -->
+      <header id="head">
+        <div class="div-in-header">
+          <div class="logo">
+            <img src="{{ url_for('static',filename='img/logo.svg') }}" alt="blocks" id="logo">
+          </div>
+          <div class="center-header">
+            <img src="{{ url_for('static',filename='img/smile.svg') }}" alt="smile" id="smileleft">
+            <span id="wb-name">ChocoBytes</span>
+            <img src="{{ url_for('static',filename='img/smile.svg') }}" alt="smile" id="smileright">
+          </div>
+          <div class="left-header">
+            <img src="{{ url_for('static',filename='img/lang.svg') }}" alt="blocks" id="lang">
+          </div>
+        </div>
+      </header>
+      <nav id="navbar">
+        <div class="navbar-list-container">
+          <ul class="navbar-list">
+            <li><div id="list-div"><img src="{{ url_for('static',filename='img/list-btn.svg') }}" id="list-img" onclick="OpenList()" /></div>
+            </li>
+            <li><a class="navlistitem" href="Button2">Button2</a> </li>
+            <li><a class="navlistitem" href="logout">logout</a></li>
+          </ul>
+        </div>
+        <form class="search-bar">
+          <input class="search" type="text" placeholder="Search..." required>
+          <input class="search-btn" type="image" src="{{ url_for('static',filename='img/search.svg') }}" value="Search">
+        </form>
+      </nav>
+      <!-- end of header -->
+      <div id="list-id" class="list-class">
+          <a href="C++">C++</a>
+          <a href="Java">Java</a>
+          <a href="cSharp">C#</a>
+          <a href="Algorithms">Algorithms</a>
+          <a href="Web">Web</a>
+          <a href="Puzzles">Puzzles</a>
+        </div>
+        <div id="blocks-div">
+          <div class="center-blocks">
+            <div class="blocks" id="Cplusplus" onclick="Cplusplus()"><a href="C++">C++</a></div>
+            <div class="blocks" id="Java" onclick="Java()"><a href="Java">Java</a></div>
+            <div class="blocks" id="Csharp" onclick="Csharp()"><a href="cSharp">C#</a></div>
+            <div class="blocks" id="Scratch" onclick="Scratch()">Scratch</div>
+            <div class="blocks" id="Web" onclick="Web()"><a href="Web">Web</a></div>
+          </div>
+            <!--<div class="blocks" id="APDim" onclick="APDim()">APDim</div>-->
+        </div>
+        <content>
+          <div id="bta3">
+          {%if lang == 'C++'%}
+            {% for row in cpp %}
+            <div class="section">
+            <h1 class="color">{{ row[1] }}</h1>
+            <p>{{ row[2] }}</p>
+            </div>
+            {% endfor %}
+          {%elif lang == 'Web'%}
+            {% for row in web %}
+            <div class="section">
+            <h1 class="color">{{ row[1] }}</h1>
+            <p>{{ row[2] }}</p>
+            </div>
+            {% endfor %}
+          {%else%}
+            {% for row in java %}
+            <div class="section">
+            <h1 class="color">{{ row[1] }}</h1>
+            <p>{{ row[2] }}</p>
+            </div>
+            {% endfor %}
+          {%endif%}
+          <!--
+            <div class="section">
+              <h1 class="color">This website is under construction</h1>
+              <img style="margin: 10px; border: 2px dashed white;" src="{{ url_for('static',filename='img/websiteUnderConstruction.svg') }}" alt="websiteUnderConstruction"/>
+            </div>
+          -->
+          </div>
+        </content>
+        <script src="{{ url_for('static',filename='script/scripting.js') }}" onclick=""></script>
+    </body>
+</html>
