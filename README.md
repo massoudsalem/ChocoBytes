@@ -34,7 +34,7 @@ and then they can enroll the beginners courses
   You can do this using MySQL workbench or using mysql command line 
 
  * Then run the file **main.py**  
-  You can do this using command  python main.py 
+  You can do this using command ` python main.py `
   do not forget to change username and password in the folowing line inside the file to yours
     >  ` db = MySQLdb.connect(host="localhost", user="root", passwd="3328", db="chocobytes") `
 
