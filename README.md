@@ -31,10 +31,10 @@ and then they can enroll the beginners courses
 
 ### To run the Project
  * At first you shoud excute the few lines in the file **Chocobytes_db.sql** to create the database for the project.
- <br> You can do this using MySQL workbench or using mysql command line 
+  You can do this using MySQL workbench or using mysql command line 
 
  * Then run the file **main.py**  
-  You can do this using command ` python main.py ` <br>
+  You can do this using command ` python main.py `
   do not forget to change username and password in the folowing line inside the file to yours
     >  ` db = MySQLdb.connect(host="localhost", user="root", passwd="3328", db="chocobytes") `
 
@@ -43,5 +43,5 @@ and then they can enroll the beginners courses
  * Make sure you have installed the following packages
      * MySQLdb
      * flask
-	<br> you can use the command  ` pip install packageName`   
+	 you can use the command  ` pip install packageName`   
 	 
