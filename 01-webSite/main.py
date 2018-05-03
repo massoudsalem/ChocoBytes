@@ -100,6 +100,11 @@ def puzzles():
         return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
 
 
+@app.route('/hafez')
+def hafez():
+        return render_template('mainPage.html')
+
+
 @app.route('/Algorithms')
 def algorithms():
     if 'logged_in' in session and session['logged_in'] is True:

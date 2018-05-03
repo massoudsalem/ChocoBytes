@@ -1,0 +1,56 @@
+<!Doctype html>
+
+
+<!-- this page is the main page that will be shown in the website
+     and all pages will be shown in this page by navigation with AJAX -->
+
+<html>
+    <head>
+        <title>ChocoBytes</title>
+        <meta charset = "utf-8"/>
+        <meta name="content" content="ChocoBtytes html page"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style02.css') }}">
+    </head>
+    <body>
+      <!-- The Header -->
+      <header id="head">
+        <div class="div-in-header">
+          <div class="logo">
+
+            <img src="{{ url_for('static',filename='img/logo.svg') }}" alt="languages" id="logo">
+          </div>
+          <div class="center-header">
+
+            <img src="{{ url_for('static',filename='img/smile.svg') }}" alt="smile" id="smileleft">
+            <span id="wb-name">ChocoBytes</span>
+            <img src="{{ url_for('static',filename='img/smile.svg') }}" alt="smile" id="smileright">
+          </div>
+          <div class="left-header">
+
+            <img src="{{ url_for('static',filename='img/lang.svg') }}" alt="languages" id="lang">
+          </div>
+        </div>
+      </header>
+      <nav id="navbar">
+        <div class="navbar-list-container">
+          <ul class="navbar-list">
+            <li><a class="navlistitem" href="Button1l">Button1</a></li>
+            <li><a class="navlistitem" href="Button2">Button2</a> </li>
+            <li><a class="navlistitem" href="Button3">Button3</a></li>
+          </ul>
+        </div>
+        <form class="search-bar">
+          <input class="search" type="text" placeholder="Search..." required>
+          <input class="search-btn" type="image" src="{{ url_for('static',filename='img/search.svg') }}" value="Search">
+        </form>
+      </nav>
+      <!-- end of header -->
+
+        <div id="Content"></div>
+        <script src="../static/script/Content.js" onclick="Info()"></script>
+    </body>
+
+
+
+</html>
