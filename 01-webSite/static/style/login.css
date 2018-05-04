@@ -165,3 +165,12 @@ input.signupfrominput::placeholder {
   color: wheat;
   text-align: center;
 }
+.signupbuttons{
+  max-width: 300px;
+  display: inline-block;
+  margin:  auto;
+}
+.signupbuttonsdiv{
+  padding-left: 44%;
+  padding-bottom: 20px;
+}

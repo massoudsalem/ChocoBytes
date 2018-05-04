@@ -298,6 +298,40 @@ a.navlistitem:active{
     top:23px;
     z-index: 5;
 }
+.text18pt{
+  font-size: 18pt;
+}
+.button {
+  background-color: #CC925D;
+  border:0;
+  outline: 0;
+  color:#wheat;
+  position: relative;
+  border-bottom:4px solid #6A371C;
+  padding:3px;
+}
+
+.button::after {
+  position: absolute;
+  left: 0;
+  top:100%;
+  display: none;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #6A371C;
+}
+.button:hover{
+  background-color: #A74C2A;
+}
+.button:active{
+  opacity: 0.8;
+}
+.button:hover::after {
+  display: inline-block;
+}
 /* #Right-list span{
     width: 20%;
     font-size: 20px;
