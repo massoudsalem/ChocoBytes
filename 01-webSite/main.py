@@ -43,6 +43,11 @@ def signup():
         email = str(request.form['email'])
         pass1 = str(request.form['Password'])
         pass2 = str(request.form['Password2'])
+        cur.execute('select * from user')
+        users= cur.fetchall
+        for user in users:
+        	if username in user:
+        		return render_template('01-loginPage.html', reg='signup', msg='This username is already taken.')
         if pass1 != pass2:
             return render_template('01-loginPage.html', reg='signup', msg='password must match')
         cur.execute("insert into user (username,email,password)values (%s,%s,%s)", (username, email, pass1))
@@ -57,7 +62,8 @@ def lang(language):
     if 'logged_in' in session and session['logged_in'] is True:
         cur.execute('select * from cpp')
         cpp_data = cur.fetchall()
-        cur.execute('select * from java')
+        #cur.execute('select * from java')
+        cur.execute('select * from csharp')
         java_data = cur.fetchall()
         cur.execute('select * from web')
         web_data = cur.fetchall()
