@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, session, redirect,request, fl
 import os
 import MySQLdb
 
+
 app = Flask(__name__)
 
 db = MySQLdb.connect(host="localhost", user="root", passwd="3328", db="chocobytes")
