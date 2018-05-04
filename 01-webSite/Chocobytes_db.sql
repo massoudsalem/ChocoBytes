@@ -3,8 +3,6 @@ create database chocobytes;
 use chocobytes;
 create table user(userid int auto_increment primary key,
 	username varchar(30) not null,
-	firstname varchar(30) not null,
-	lastname varchar(30) not null,
     email varchar(50) not null,
     password varchar(30) not null,
     rank varchar(30) not null default 'Beginner'
