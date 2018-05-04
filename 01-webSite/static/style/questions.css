@@ -1,0 +1,41 @@
+.section{
+  color:#DEC095;
+}
+input[type="text"]{
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid #1e110b;
+  background-color: #4d2600;
+  color:#DEC095;
+
+}
+.small{
+  width:35px;
+}
+.medium{
+  width: 40px;
+}
+.large{
+  width: 50px;
+}
+.answerbutton{
+  display: block;
+  width: 100%;
+  background-color: #1e110b;
+  font-family: Acron;
+  border: 0;
+  padding: 2px;
+  text-align: center;
+  color: #FFFBF0;
+  border-bottom: 3px solid #cc925d;
+  margin: 0 auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.answerbutton:hover{
+  color:#F7D391;
+  opacity: 0.8;
+}
+.answerbutton:active{
+  color: black;
+}
