@@ -1,57 +1,80 @@
-@media screen and (max-width: 550px){
-  div#loginformdiv{
+@media screen and (max-width: 550px) {
+  div#loginformdiv {
     width: 260px;
     min-width: 390px;
     height: 180px;
     background-size: 410px 410px;
   }
-  div#formcontent{
+  div#formcontent {
     max-width: 230px;
     min-width: 230px;
     margin-top: 13px;
   }
-  img#form-logo{
+  img#form-logo {
     width: 60%;
     margin-left: 30px;
   }
-  input#username{
+  input#username {
     min-width: 100px;
     height: 16px;
     font-size: 16px;
   }
-  input#password{
+  input#password {
     min-width: 100px;
     height: 16px;
     font-size: 16px;
   }
-  form#loginform{
+  form#loginform {
     margin: 0 auto;
   }
 }
-#loginformdiv{
+
+#loginformdiv {
+  display: none;
   width: 260px;
   min-width: 600px;
   height: 275px;
   margin: auto;
   overflow: hidden;
-  background-image:url('../img/005-computer.svg');
-  background-position: 50% 50% ;
+  background-image: url('../img/005-computer.svg');
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 630px 630px;
 }
-#formcontent{
+#signupformdiv {
+  width: 260px;
+  min-width: 600px;
+  height: 275px;
+  margin: auto;
+  overflow: hidden;
+  background-image: url('../img/005-computer.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 630px 630px;
+}
+
+#formcontent {
   position: relative;
   margin: 0 auto;
   margin-top: 20px;
   width: 50%;
   max-width: 350px;
-  min-width: 350px;
-  //margin: auto;
+  min-width: 350px; //margin: auto;
   overflow: hidden;
 }
-input.formtextinput{
+#signupform {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 50%;
+  max-width: 350px;
+  min-width: 350px; //margin: auto;
+  overflow: hidden;
+}
+
+input.formtextinput {
   display: block;
-  color:#DEC095;
+  color: #DEC095;
   font-family: Acron;
   margin-bottom: 2px;
   min-width: 200px;
@@ -63,11 +86,32 @@ input.formtextinput{
   padding-left: 2px;
   border-left: 5px solid #1e110b;
 }
+
 input.formtextinput::placeholder {
   color: #E28343;
   opacity: 1;
 }
-#submitstyle{
+input.signupfrominput {
+  display: block;
+  color: #DEC095;
+  font-family: Acron;
+  margin-bottom: 5px;
+  min-width: 200px;
+  height: 26px;
+  background-color: #4d2600;
+  font-size: 22px;
+  padding: 1px;
+  border: 0;
+  padding-left: 2px;
+  border-left: 5px solid #1e110b;
+}
+
+input.signupfrominput::placeholder {
+  color: #E28343;
+  opacity: 1;
+}
+
+.submitstyle {
   background-color: #1e110b;
   font-family: Acron;
   border: 0;
@@ -75,30 +119,49 @@ input.formtextinput::placeholder {
   text-align: center;
   color: #E28343;
 }
-#submitstyle:hover{
-  color:#1e110b;
+
+.submitstyle:hover {
+  color: #1e110b;
 }
-#form-logo{
+
+#form-logo {
   width: 100%;
   margin-left: 40px;
   height: auto;
 }
+
 /* #form-background{
   margin: 0 auto;
   background-color: red;
   width: 100%;
   z-index: -1000;
 } */
-#loginform{
+
+#loginform {
   max-width: 200px;
   margin: 0 40px;
 }
-#list-div{
-    width: 150px;
-    transition: .5s;
-    padding: 16px;
+.form {
+  max-width: 200px;
+  margin: 0 40px;
 }
-#list-span{
-    cursor: pointer;
-    color: #cc925d;
+
+#list-div {
+  width: 150px;
+  transition: .5s;
+  padding: 16px;
+}
+
+#list-span {
+  cursor: pointer;
+  color: #cc925d;
+}
+
+.msg {
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+  height: 15px;
+  color: wheat;
+  text-align: center;
 }

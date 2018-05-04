@@ -55,43 +55,50 @@
           <a href="Puzzles">Puzzles</a>
       </div>
       <!-- Dynamiclist -->
-    
-     {% if reg=='login' %}
      <!-- loginForm -->
       <div id="loginformdiv">
         <!--<img src="./img/005-computer.svg" alt="languages" id="form-background" >-->
         <div id="formcontent">
           <form action="/login" method="POST" id="loginform">
             <img src="{{ url_for('static',filename='img/logo.svg') }}" alt="languages" id="form-logo" >
-            <label>{{msg}}</label>
-            <input class="formtextinput" id="username" type="text" name="UserName" placeholder="user name">
-            <input class="formtextinput" id="password" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-            <input id="submitstyle" type="submit" value="Log In">
+            <input required class="formtextinput" id="username" type="text" name="UserName" placeholder="user name">
+            <input required class="formtextinput" id="password" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+            <input class="submitstyle" type="submit" value="Log In">
+            <button class="submitstyle" type="button" name="button" onclick="hidelogin()">Sgin Up</button>
           </form>
         </div>
       </div>
-    <!-- loginForm -->
-      {% elif reg=='signup' %}
-      <!-- SignUpForm -->
-      <div id="">
-        <!--<img src="./img/005-computer.svg" alt="languages" id="form-background" >-->
-        <div id="formcontent">
-          <form action="/signup" method="POST" id="loginform">
-            <img src="{{ url_for('static',filename='img/logo.svg') }}" alt="languages" id="form-logo" >
-            <label>{{msg}}</label>
-            <input class="formtextinput" id="username" type="text" name="UserName" placeholder="user name">
-            <input class="formtextinput" id="firstname" type="text" name="firstName" placeholder="first name">
-            <input class="formtextinput" id="lastname" type="text" name="lastName" placeholder="last name">
-            <input class="formtextinput" id="email" type="email" name="Email" placeholder="someone@example.com">
-            <input class="formtextinput" id="password" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-            <input class="formtextinput" id="password" type="password" name="Password2" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-            <input id="submitstyle" type="submit" value="Sign Up">
-          </form>
-        </div>
-      </div>
-    <!-- SignUpForm -->
-      {% endif %}
-      
-
+      <label class="msg">{{msg}}</label>
+    <!-- loginForm-->
+    <!-- SignupForm -->
+  <div id="signupformdiv">
+    <!--<img src="./img/005-computer.svg" alt="languages" id="form-background" >-->
+    <div id="signupform">
+      <form class="form">
+        <!-- <img src="./img/logo.svg" alt="languages" ="form-logo" > -->
+        <input required class="signupfrominput" id="usernamesignup" type="text" name="UserName" placeholder="user name">
+        <input required class="signupfrominput" id="passwordsignup" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+        <input required class="signupfrominput" id="repasswordsignup" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+        <input required class="signupfrominput" type="email" name="email" placeholder="example@example.com">
+        <input class="submitstyle" type="submit" value="Sign up">
+        <button class="submitstyle" type="button" name="button" onclick="hidesignup()">Login</button>
+      </form>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var login=document.getElementById("loginformdiv")
+  var signup=document.getElementById("signupformdiv")
+  function hidelogin() {
+    "use strict";
+    login.style.display = "none";
+    signup.style.display = "block";
+  }
+  function hidesignup() {
+    "use strict";
+    login.style.display = "block";
+    signup.style.display = "none";
+  }
+</script>
+<!-- SignupFrom -->
     </body>
 </html>

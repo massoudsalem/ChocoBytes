@@ -99,6 +99,13 @@ def puzzles():
     else:
         return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
 
+@app.route('/profile')
+def profile():
+    if 'logged_in' in session and session['logged_in'] is True:
+        return render_template('profile.html')
+    else:
+        return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
+
 
 @app.route('/hafez')
 def hafez():
