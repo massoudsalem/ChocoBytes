@@ -32,3 +32,26 @@ code{
 .padding10px{
   padding: 10px;
 }
+.inline-block{
+  display: inline-block;
+}
+.circle{
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: #774125;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.wheat{
+  color:#FFFBF0;
+}
+.text26pt{
+  font-size: 26pt;
+}
+.centercircletxt{
+ position: relative;
+ top:35%;
+}
