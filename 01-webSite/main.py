@@ -40,14 +40,12 @@ def login():
 def signup():
     if request.method == 'POST':
         username = str(request.form['UserName'])
-        fname = str(request.form['firstName'])
-        lname = str(request.form['lastName'])
-        email = str(request.form['Email'])
+        email = str(request.form['email'])
         pass1 = str(request.form['Password'])
         pass2 = str(request.form['Password2'])
         if pass1 != pass2:
             return render_template('01-loginPage.html', reg='signup', msg='password must match')
-        cur.execute("insert into user (username,firstname,lastname,email,password)values (%s,%s,%s,%s,%s)", (username, fname, lname, email, pass1))
+        cur.execute("insert into user (username,email,password)values (%s,%s,%s)", (username, email, pass1))
         db.commit()
         return render_template('01-loginPage.html', reg='login', msg='almost ready, login to continue')
     else:

@@ -58,7 +58,7 @@
   </div>
   <!-- Dynamiclist -->
   <!-- SignUp and LoginForm -->
-  <div class="signupbuttonsdiv">    
+  <div class="signupbuttonsdiv">
     <div class="signupbuttons">
       <button class="button text18pt" type="button" name="button" onclick="hidelogin()">Sgin Up</button>
       <button class="button text18pt" type="button" name="button" onclick="hidesignup()">Login</button>
@@ -82,12 +82,12 @@
   <div id="signupformdiv">
     <!--<img src="./img/005-computer.svg" alt="languages" id="form-background" >-->
     <div id="signupform">
-      <form class="form">
+      <form class="form" action="/signup" method="POST" id="signup">
         <!-- <img src="./img/logo.svg" alt="languages" ="form-logo" > -->
         <input required class="signupfrominput" id="usernamesignup" type="text" name="UserName" placeholder="user name">
         <input required class="signupfrominput" id="passwordsignup" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-        <input required class="signupfrominput" id="repasswordsignup" type="password" name="Password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-        <input required class="signupfrominput" type="email" name="email" placeholder="example@example.com">
+        <input required class="signupfrominput" id="repasswordsignup" type="password" name="Password2" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+        <input required class="signupfrominput" id="emailsignup" type="email" name="email" placeholder="example@example.com">
         <input class="submitstyle" type="submit" value="Sign up">
       </form>
     </div>
