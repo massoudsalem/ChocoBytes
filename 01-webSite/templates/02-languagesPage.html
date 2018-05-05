@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style/style02.css') }}">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style/content.css') }}">
+  <!-- <link rel="stylesheet" href="circles.css" /> -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style/circleGrid.css') }}">
 </head>
 
 <body>
@@ -53,48 +55,66 @@
   </div>
   <div id="blocks-div">
     <div class="center-blocks">
-      <div class="blocks" id="Cplusplus" onclick="Cplusplus()"><a href="C++">C++</a></div>
-      <div class="blocks" id="Java" onclick="Java()"><a href="Java">Java</a></div>
-      <div class="blocks" id="Csharp" onclick="Csharp()"><a href="cSharp">C#</a></div>
+      <div class="blocks" id="Cplusplus" onclick="Cplusplus()">C++</div>
+      <div class="blocks" id="Java" onclick="Java()">Java</div>
+      <div class="blocks" id="Csharp" onclick="Csharp()">C#</div>
       <div class="blocks" id="Scratch" onclick="Scratch()">Scratch</div>
-      <div class="blocks" id="Web" onclick="Web()"><a href="Web">Web</a></div>
+      <div class="blocks" id="Web" onclick="Web()">Web</div>
     </div>
     <!--<div class="blocks" id="APDim" onclick="APDim()">APDim</div>-->
   </div>
   <content>
     <div id="bta3">
-      {%if lang == 'C++'%} {% for row in cpp %}
-      <div class="section">
-        <h1 class="color">{{ row[1] }}</h1>
-        <p>{{ row[2] }}</p>
-      </div>
-      {% endfor %} {%elif lang == 'Web'%} {% for row in web %}
-      <div class="section">
-        <h1 class="color">{{ row[1] }}</h1>
-        <p>{{ row[2] }}</p>
-      </div>
-      {% endfor %} {%else%} {% for row in java %}
-      <div class="section">
-        <h1 class="color">{{ row[1] }}</h1>
-        <p>{{ row[2] }}</p>
-      </div>
-      {% endfor %} {%endif%}
-      <!--
-            <div class="section">
-              <h1 class="color">This website is under construction</h1>
-              <img style="margin: 10px; border: 2px dashed white;" src="{{ url_for('static',filename='img/websiteUnderConstruction.svg') }}" alt="websiteUnderConstruction"/>
-            </div>
-          -->
-      <div class="section">
-        <div class="center inline-block">
-          <div class="circle ">
-            <span class="wheat centercircletxt text26pt">Java</span>
+      <div class="section gridcircles">
+        <img id="Arrow" class="Arrow1" onclick="ArrowToClose()" src="{{ url_for('static',filename='img/arrow.svg') }}" />
+        <div class="circlegridelement circlestyle visibilityhide">
+          <span class="wheat centercircletxt">1</span>
+        </div>
+        <div id="ID2" onclick="fullscren2()" class="circlegridelement circlestyle">
+          <div id="id2contact" class="none">
+
           </div>
+          <span class="wheat centercircletxt">2</span>
+        </div>
+        <div class="circlegridelement circlestyle visibilityhide">
+          <span class="wheat centercircletxt">3</span>
+        </div>
+        <div id="ID4" onclick="fullscren4()" class="circlegridelement circlestyle">
+          <div id="id4contact" class="none">
+
+          </div>
+          <span class="wheat centercircletxt">4</span>
+        </div>
+        <div class="circlegridelement circlestyle visibilityhide">
+          <span class="wheat centercircletxt">5</span>
+        </div>
+        <div id="ID6" onclick="fullscren6()" class="circlegridelement circlestyle">
+          <div id="id6contact" class="none">
+
+          </div>
+          <span class="wheat centercircletxt">6</span>
+        </div>
+        <div id="ID7" onclick="fullscren7()" class="circlegridelement circlestyle">
+          <div id="id7contact" class="none">
+
+          </div>
+          <span class="wheat centercircletxt">7</span>
+        </div>
+        <div class="circlegridelement circlestyle visibilityhide">
+          <span class="wheat centercircletxt">8</span>
+        </div>
+        <div id="ID9" onclick="fullscren9()" class="circlegridelement circlestyle">
+          <div id="id9contact" class="none">
+
+          </div>
+          <span class="wheat centercircletxt">9</span>
         </div>
       </div>
     </div>
+
   </content>
   <script src="{{ url_for('static',filename='script/scripting.js') }}" onclick=""></script>
+  <script src="{{ url_for('static',filename='script/circles.js') }}" onclick=""></script>
 </body>
 
 </html>
