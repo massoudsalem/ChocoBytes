@@ -1,0 +1,67 @@
+@media screen and (max-width: 3840px) {
+  .gridcircles {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    justify-items: center;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  .circlegridelement {
+    text-align: center;
+    margin: 0;
+    max-width: 150px;
+    width: 150px;
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .gridcircles {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    justify-items: center;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .circlegridelement {
+    text-align: center;
+    margin: 0;
+    max-width: 100px;
+    width: 100px;
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .gridcircles {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3px;
+    justify-items: center;
+    grid-auto-rows: minmax(80px, auto);
+  }
+  .circlegridelement {
+    text-align: center;
+    margin: 0;
+    max-width: 80px;
+    width: 80px;
+    min-width: 80px;
+  }
+}
+
+.circlestyle {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #774125;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  transition: .2s;
+}
+
+.visibilityhide {
+  visibility: hidden;
+}

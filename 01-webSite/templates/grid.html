@@ -1,0 +1,105 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>ChocoBytes</title>
+  <meta charset="utf-8" />
+  <meta name="content" content="ChocoBtytes html page" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=".\style\style02.css" />
+  <link rel="stylesheet" href=".\style\content.css" />
+  <!-- <link rel="stylesheet" href="circles.css" /> -->
+  <link rel="stylesheet" href="circlegrid.css" />
+</head>
+
+<body>
+  <!-- The Header -->
+  <header id="head">
+    <div class="div-in-header">
+      <div class="logo">
+        <img src="./img/logo.svg" alt="blocks" id="logo">
+      </div>
+      <div class="center-header">
+        <img src="./img/smile.svg" alt="smile" id="smileleft">
+        <span id="wb-name">ChocoBytes</span>
+        <img src="./img/smile.svg" alt="smile" id="smileright">
+      </div>
+      <div class="left-header">
+        <img src="./img/lang.svg" alt="blocks" id="lang">
+      </div>
+    </div>
+  </header>
+  <nav id="navbar">
+    <div class="navbar-list-container">
+      <ul class="navbar-list">
+        <li>
+          <div id="list-div"><img src="img/list-btn.svg" id="list-img" onclick="OpenList()" /></div>
+        </li>
+        <li><a class="navlistitem" href="02-languagesPage.html">Button2</a> </li>
+        <li><a class="navlistitem" href="02-languagesPage.html">Button3</a></li>
+      </ul>
+    </div>
+    <form class="search-bar">
+      <input class="search" type="text" placeholder="Search..." required>
+      <input class="search-btn" type="image" src="./img/search.svg" value="Search">
+    </form>
+  </nav>
+  <!-- end of header -->
+  <div id="list-id" class="list-class">
+    <a href="02-languagesPage.html">C++</a>
+    <a href="02-languagesPage.html">Java</a>
+    <a href="03-cSharpPage.html">C#</a>
+    <a href="05-algorthimsPage.html">Algorithms</a>
+    <a href="02-languagesPage.html">Web</a>
+    <a href="04-puzzlesPage.html">Puzzles</a>
+  </div>
+  <div id="blocks-div">
+    <div class="center-blocks">
+      <div class="blocks" id="Cplusplus" onclick="Cplusplus()">C++</div>
+      <div class="blocks" id="Java" onclick="Java()">Java</div>
+      <div class="blocks" id="Csharp" onclick="Csharp()">C#</div>
+      <div class="blocks" id="Scratch" onclick="Scratch()">Scratch</div>
+      <div class="blocks" id="Web" onclick="Web()">Web</div>
+    </div>
+    <!--<div class="blocks" id="APDim" onclick="APDim()">APDim</div>-->
+  </div>
+  <content>
+    <div id="bta3">
+      <div class="section gridcircles">
+        <img id="Arrow" class="Arrow1" onclick="ArrowToClose()" src="arrow.svg" />
+        <div class="circlegridelement circlestyle visibilityhide">
+          <span class="wheat centercircletxt">1</span>
+        </div>
+        <div id="ID2" onclick="fullscren2()" class="circlegridelement circlestyle">
+          <span class="wheat centercircletxt">2</span>
+        </div>
+        <div class="circlegridelement circlestyle visibilityhide">
+          <span class="wheat centercircletxt">3</span>
+        </div>
+        <div id="ID4" onclick="fullscren4()" class="circlegridelement circlestyle">
+          <span class="wheat centercircletxt">4</span>
+        </div>
+        <div class="circlegridelement circlestyle visibilityhide">
+          <span class="wheat centercircletxt">5</span>
+        </div>
+        <div id="ID6" onclick="fullscren6()" class="circlegridelement circlestyle">
+          <span class="wheat centercircletxt">6</span>
+        </div>
+        <div id="ID7" onclick="fullscren7()" class="circlegridelement circlestyle">
+          <span class="wheat centercircletxt">7</span>
+        </div>
+        <div class="circlegridelement circlestyle visibilityhide">
+          <span class="wheat centercircletxt">8</span>
+        </div>
+        <div id="ID9" onclick="fullscren9()" class="circlegridelement circlestyle">
+          <span class="wheat centercircletxt">9</span>
+        </div>
+      </div>
+    </div>
+
+  </content>
+  <script src="script/scripting.js" onclick=""></script>
+  <script src="circles.js" onclick=""></script>
+</body>
+
+</html>
