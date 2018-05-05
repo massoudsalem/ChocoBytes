@@ -65,3 +65,36 @@
 .visibilityhide {
   visibility: hidden;
 }
+.gridcircles{
+    position: relative;
+    width: 80%;
+}
+.circlefullscren{
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #774125;
+    transition: 0.2s;
+    z-index: 1;
+}
+#Arrow{
+    position: absolute;
+    transition: 0.5;
+    transform: scaleX(-1);
+    cursor: pointer;
+    left:-10%;
+}
+.Arrow1{
+    width: 0;
+    height: 0;
+    display: none;
+}
+.Arrow2{
+    width: 8%;
+    height: 8%;
+}
+.Arrow2:hover{
+  background-color: #774125;
+  border-radius: 50%;
+}
