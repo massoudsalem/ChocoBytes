@@ -69,29 +69,36 @@ var v = document.getElementById("ID2"),
     y = document.getElementById("ID7"),
     z = document.getElementById("ID9"),
     Arrow = document.getElementById("Arrow");
+    var spans=document.getElementsByClassName("centercircletxt")
 function fullscren2() {
     document.getElementById("id2contact").style.display="block"
     v.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
+    spans[1].style.top="0"
 }
 function fullscren4() {
   document.getElementById("id4contact").style.display="block"
     w.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
+    spans[3].style.top="0"
 }
 function fullscren6() {
   document.getElementById("id6contact").style.display="block"
     x.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
+    spans[5].style.top="0"
 }
 function fullscren7() {
   document.getElementById("id7contact").style.display="block"
     y.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
+    spans[6].style.top="0"
 }
 function fullscren9() {
+  document.getElementById("id9contact").style.display="block"
     z.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
+    spans[8].style.top="0"
 }
 function ArrowToClose() {
     v.classList = "circlegridelement circlestyle";
@@ -104,5 +111,13 @@ function ArrowToClose() {
     document.getElementById("id6contact").style.display="none"
     document.getElementById("id7contact").style.display="none"
     document.getElementById("id9contact").style.display="none"
+    spans[0].style.top="35%"
+    spans[1].style.top="35%"
+    spans[2].style.top="35%"
+    spans[3].style.top="35%"
+    spans[5].style.top="35%"
+    spans[6].style.top="35%"
+    spans[7].style.top="35%"
+    spans[8].style.top="35%"
     Arrow.classList = "Arrow1";
 }

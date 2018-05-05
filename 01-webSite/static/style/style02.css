@@ -116,7 +116,7 @@ a.navlistitem:active{
  padding: 0 5px;
 }
 .search-bar{
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-grow: 1;
     flex-basis: auto;

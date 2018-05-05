@@ -33,8 +33,7 @@
         <li>
           <div id="list-div"><img src="{{ url_for('static',filename='img/list-btn.svg') }}" id="list-img" onclick="OpenList()" /></div>
         </li>
-        <li><a class="navlistitem" href="02-languagesPage.html">Button2</a> </li>
-        <li><a class="navlistitem" href="02-languagesPage.html">Button3</a></li>
+        <li><a class="navlistitem" href="logout">logout</a></li>
       </ul>
     </div>
     <form class="search-bar">
@@ -73,7 +72,8 @@
         <div class="bio">
           <span calss="bioText">
            {%if rank=='Beginner'%}
-           علطلاج انت راجل برنس
+            Now you are a part of our small community ,we hope you complete all levels and funny educational puzzles
+            to become the master of this community
             {%elif rank=='level2'%}
             {%elif rank=='level3'%}
             {%elif rank=='level4'%}

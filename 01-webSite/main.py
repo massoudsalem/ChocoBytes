@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 db = MySQLdb.connect(host="localhost", user="root", passwd="3328", db="chocobytes")
 cur = db.cursor()
-languages={'C#': 'csharp', 'C++': 'cpp', 'Java': 'java', 'Web': 'web', 'Algorithms': 'algorithms'}
+languages={'C#': 'csharp', 'C++': 'cpp','Cpp': 'cpp', 'Java': 'java', 'Web': 'web', 'Algorithms': 'algorithms'}
 
 
 @app.route('/')

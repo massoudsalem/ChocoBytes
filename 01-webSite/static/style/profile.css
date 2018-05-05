@@ -29,14 +29,14 @@
   background-color: white;
 }
 #profilepic{
-  width: 6%;
-  height: 10%;
+  width: 110px;
+  height: 110px;
   margin: 19px 15px;
 }
 #profileusername{
   position: relative;
   left: 25px;
-  top: 100px;
+  top: 70px;
   font-size: 18pt;
 }
 .star{
