@@ -1,4 +1,4 @@
-/* global document */
+/* global document */     /*
 var v = document.getElementById('circle'),
     w = document.getElementById('circleN2'),
     x = document.getElementById('circleN3'),
@@ -61,4 +61,48 @@ function fulldata5() {
         document.getElementById("javacontantN5").classList = "javacontant2";
         document.getElementById("arrow").classList = ("arrow2");
     }
+}
+*/
+var v = document.getElementById("ID2"),
+    w = document.getElementById("ID4"),
+    x = document.getElementById("ID6"),
+    y = document.getElementById("ID7"),
+    z = document.getElementById("ID9"),
+    Arrow = document.getElementById("Arrow");
+function fullscren2() {
+    document.getElementById("id2contact").style.display="block"
+    v.classList = "circlefullscren";
+    Arrow.classList = "Arrow2";
+}
+function fullscren4() {
+  document.getElementById("id4contact").style.display="block"
+    w.classList = "circlefullscren";
+    Arrow.classList = "Arrow2";
+}
+function fullscren6() {
+  document.getElementById("id6contact").style.display="block"
+    x.classList = "circlefullscren";
+    Arrow.classList = "Arrow2";
+}
+function fullscren7() {
+  document.getElementById("id7contact").style.display="block"
+    y.classList = "circlefullscren";
+    Arrow.classList = "Arrow2";
+}
+function fullscren9() {
+    z.classList = "circlefullscren";
+    Arrow.classList = "Arrow2";
+}
+function ArrowToClose() {
+    v.classList = "circlegridelement circlestyle";
+    w.classList = "circlegridelement circlestyle";
+    x.classList = "circlegridelement circlestyle";
+    y.classList = "circlegridelement circlestyle";
+    z.classList = "circlegridelement circlestyle";
+    document.getElementById("id2contact").style.display="none"
+    document.getElementById("id4contact").style.display="none"
+    document.getElementById("id6contact").style.display="none"
+    document.getElementById("id7contact").style.display="none"
+    document.getElementById("id9contact").style.display="none"
+    Arrow.classList = "Arrow1";
 }
