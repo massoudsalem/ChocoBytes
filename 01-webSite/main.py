@@ -1,18 +1,23 @@
 from flask import Flask, render_template, url_for, session, redirect,request, flash
 import os
 import MySQLdb
-
+from unidecode import unidecode
 
 app = Flask(__name__)
 
 db = MySQLdb.connect(host="localhost", user="root", passwd="3328", db="chocobytes")
 cur = db.cursor()
+languages={'C#': 'csharp', 'C++': 'cpp', 'Java': 'java', 'Web': 'web', 'Algorithms': 'algorithms'}
+
 
 @app.route('/')
 @app.route('/home')
 def home():
     if 'logged_in' in session and session['logged_in'] is True:
-        return lang('')
+        if 'language' in session:
+            return lang(session['language'])
+        else:
+            return lang('Java')
     else:
         return redirect(url_for('login'))
 
@@ -60,14 +65,19 @@ def signup():
 @app.route('/<language>')
 def lang(language):
     if 'logged_in' in session and session['logged_in'] is True:
-        cur.execute('select * from cpp')
-        cpp_data = cur.fetchall()
-        #cur.execute('select * from java')
-        cur.execute('select * from csharp')
-        java_data = cur.fetchall()
-        cur.execute('select * from web')
-        web_data = cur.fetchall()
-        return render_template('02-languagesPage.html', lang=language, cpp=cpp_data, java=java_data, web=web_data)
+        cur.execute('select * from ' +languages[language])
+        data = cur.fetchall()
+        Data = []
+        for row in data:
+            row[1].decode("utf-8", "ignore")
+            row[1].decode("utf-8", "ignore")
+            row[1].decode("windows-1252", "ignore")
+            row[1].decode("windows-1252", "ignore")
+            row[1].decode('latin-1')
+
+            Data.append(row)
+        session['language'] = language
+        return render_template('02-languagesPage.html', lang=language, content=Data)
     else:
         return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
 
@@ -92,7 +102,10 @@ def c_sharp():
     if 'logged_in' in session and session['logged_in'] is True:
         cur.execute('select * from csharp')
         data = cur.fetchall()
-        return render_template('03-cSharpPage.html', csharp=data)
+        Data=[]
+        for row in data:
+            Data.append(row)
+        return render_template('03-cSharpPage.html', csharp=Data)
     else:
         return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
 
@@ -108,14 +121,8 @@ def puzzles():
 def profile():
     if 'logged_in' in session and session['logged_in'] is True:
         return render_template('08-profile.html',user=session['username'],rank=session['rank'])
-
     else:
         return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
-
-
-@app.route('/grid')
-def grid():
-        return render_template('grid.html')
 
 
 @app.route('/Algorithms')
