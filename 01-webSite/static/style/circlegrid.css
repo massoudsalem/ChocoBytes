@@ -78,6 +78,9 @@
     transition: 0.2s;
     z-index: 1;
 }
+.none{
+  display: none;
+}
 #Arrow{
     position: absolute;
     transition: 0.5;

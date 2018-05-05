@@ -70,18 +70,22 @@ var v = document.getElementById("ID2"),
     z = document.getElementById("ID9"),
     Arrow = document.getElementById("Arrow");
 function fullscren2() {
+    document.getElementById("id2contact").style.display="block"
     v.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
 }
 function fullscren4() {
+  document.getElementById("id4contact").style.display="block"
     w.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
 }
 function fullscren6() {
+  document.getElementById("id6contact").style.display="block"
     x.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
 }
 function fullscren7() {
+  document.getElementById("id7contact").style.display="block"
     y.classList = "circlefullscren";
     Arrow.classList = "Arrow2";
 }
@@ -95,5 +99,10 @@ function ArrowToClose() {
     x.classList = "circlegridelement circlestyle";
     y.classList = "circlegridelement circlestyle";
     z.classList = "circlegridelement circlestyle";
+    document.getElementById("id2contact").style.display="none"
+    document.getElementById("id4contact").style.display="none"
+    document.getElementById("id6contact").style.display="none"
+    document.getElementById("id7contact").style.display="none"
+    document.getElementById("id9contact").style.display="none"
     Arrow.classList = "Arrow1";
 }
