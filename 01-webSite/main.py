@@ -31,6 +31,7 @@ def login():
         else:
             session['logged_in'] = True
             session['username'] = username
+            session['rank']=data[4]
             return redirect(url_for('home'))
     else:
         return render_template('01-loginPage.html', reg='login', msg='')
@@ -43,11 +44,10 @@ def signup():
         email = str(request.form['email'])
         pass1 = str(request.form['Password'])
         pass2 = str(request.form['Password2'])
-        cur.execute('select * from user')
-        users= cur.fetchall
-        for user in users:
-        	if username in user:
-        		return render_template('01-loginPage.html', reg='signup', msg='This username is already taken.')
+        cur.execute("SELECT * from user where username='" + username + "'")
+        data = cur.fetchone()
+        if data is not None:
+            return render_template('01-loginPage.html', reg='signup', msg='This Username is already registered !')
         if pass1 != pass2:
             return render_template('01-loginPage.html', reg='signup', msg='password must match')
         cur.execute("insert into user (username,email,password)values (%s,%s,%s)", (username, email, pass1))
@@ -107,7 +107,8 @@ def puzzles():
 @app.route('/profile')
 def profile():
     if 'logged_in' in session and session['logged_in'] is True:
-        return render_template('profile.html')
+        return render_template('08-profile.html',user=session['username'],rank=session['rank'])
+
     else:
         return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
 
@@ -127,23 +128,27 @@ def algorithms():
         return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
 
 
-""" TODO
-@app.route('/Button1')
-def Button1():
-    return render_template('')
-@app.route('/Button2')
-def Button2():
-    return render_template('')
-@app.route('/Button3')
-def Button3():
-    return render_template('')
-"""
-
 
 @app.route("/logout")
 def logout():
     session['logged_in'] = False
     return home()
+
+
+@app.route("/admin", methods=['GET', 'POST'])
+def admin():
+    if 'logged_in' in session and session['logged_in'] is True and session['username'] == "admin":
+        if request.method == 'POST':
+            title = str(request.form['title'])
+            content = str(request.form['content'])
+            Lang = str(request.form['language'])
+            cur.execute("insert into "+Lang+"(title,content)values (%s,%s)", (title, content))
+            db.commit()
+            return render_template('01-loginPage.html', reg='login', msg='almost ready, login to continue')
+        else:
+            return render_template('07-admin.html')
+    else:
+        return redirect(url_for('login'))
 
 
 if __name__ == "__main__":

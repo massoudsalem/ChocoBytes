@@ -32,30 +32,19 @@
           </div>
         </div>
       </header>
-      <nav id="navbar">
-        <div class="navbar-list-container">
-          <ul class="navbar-list">
-            <li><a class="navlistitem" href="Button1l">Button1</a></li>
-            <li><a class="navlistitem" href="Button2">Button2</a> </li>
-            <li><a class="navlistitem" href="Button3">Button3</a></li>
-          </ul>
-        </div>
-        <form class="search-bar">
-          <input class="search" type="text" placeholder="Search..." required>
-          <input class="search-btn" type="image" src="{{ url_for('static',filename='img/search.svg') }}" value="Search">
-        </form>
-      </nav>
+
       <!-- end of header -->
-      
-      
-        <form>
-            <input type="text" style="display: block">
-            <textarea style="display: block"></textarea>
-            <select>
-                <option>C#</option>
-                <option>C++</option>
-                <option>Java</option>
-                <option>Web</option>
+
+
+        <form action="/admin" method="post">
+            <input name="title" type="text" style="display: block">
+            <textarea name="content" style="display: block"></textarea>
+            <select name="language">
+                <option name="csharp">C#</option>
+                <option name="cpp">C++</option>
+                <option name="java">Java</option>
+                <option name="web">Web</option>
+                <option name="algo">Algorithm</option>
             </select>
             <input type="submit">
         </form>
