@@ -137,14 +137,15 @@ def logout():
 
 @app.route("/admin", methods=['GET', 'POST'])
 def admin():
+    languages={'C#': 'csharp', 'C++': 'cpp', 'Java': 'java', 'Web': 'web', 'Algorithms': 'algorithms'}
     if 'logged_in' in session and session['logged_in'] is True and session['username'] == "admin":
         if request.method == 'POST':
             title = str(request.form['title'])
             content = str(request.form['content'])
             Lang = str(request.form['language'])
-            cur.execute("insert into "+Lang+"(title,content)values (%s,%s)", (title, content))
+            cur.execute("insert into "+languages[Lang]+"(title,content)values (%s,%s)", (title, content))
             db.commit()
-            return render_template('01-loginPage.html', reg='login', msg='almost ready, login to continue')
+            return redirect(url_for('admin'))
         else:
             return render_template('07-admin.html')
     else:
