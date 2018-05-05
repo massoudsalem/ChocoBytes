@@ -101,3 +101,7 @@
   background-color: #774125;
   border-radius: 50%;
 }
+.centercircletxt{
+  display: block;
+  text-align: center;
+}
