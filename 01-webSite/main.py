@@ -1,7 +1,6 @@
 from flask import Flask, render_template, url_for, session, redirect,request, flash
 import os
 import MySQLdb
-from unidecode import unidecode
 
 app = Flask(__name__)
 
@@ -69,12 +68,6 @@ def lang(language):
         data = cur.fetchall()
         Data = []
         for row in data:
-            row[1].decode("utf-8", "ignore")
-            row[1].decode("utf-8", "ignore")
-            row[1].decode("windows-1252", "ignore")
-            row[1].decode("windows-1252", "ignore")
-            row[1].decode('latin-1')
-
             Data.append(row)
         session['language'] = language
         return render_template('02-languagesPage.html', lang=language, content=Data)
