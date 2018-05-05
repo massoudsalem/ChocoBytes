@@ -113,9 +113,9 @@ def profile():
         return render_template('01-loginPage.html', reg='login', msg='You must login to continue')
 
 
-@app.route('/hafez')
-def hafez():
-        return render_template('mainPage.html')
+@app.route('/grid')
+def grid():
+        return render_template('grid.html')
 
 
 @app.route('/Algorithms')
