@@ -232,26 +232,22 @@ a.navlistitem:active{
     font-size: 100%;
     border-left: 5px solid #371809;
     cursor: pointer;
-    transition: .7s;
     color: #cc925d;
     overflow: hidden;
-    transition: 0.5s;
 }
 .blocks:hover{
     opacity: 0.8;
 }
 .hide{
-  transition: 0.5s;
   width: 0;
   height: 0;
   visibility: hidden;
   display: none;
 }
 .fullblock{
-  transition: 0.5s;
-  min-width:250px;
-  max-width: 500px;
-  width: 100%;
+  min-width:500px;
+  max-width: 700px;
+  width: 700px;
   padding: 15px;
   background-color: #774125;
   margin: 0 auto;
@@ -260,7 +256,7 @@ a.navlistitem:active{
   font-size: 100%;
   border-left: 5px solid #371809;
   cursor: pointer;
-  transition: .7s;
+  transition: .2s;
   color: #cc925d;
   overflow: hidden;
 }

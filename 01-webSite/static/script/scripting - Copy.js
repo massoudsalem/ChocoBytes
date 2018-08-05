@@ -92,7 +92,7 @@ function Csharp() {
     if (x1 > y1) {
         document.getElementById("Cplusplus").className = "hide";
         document.getElementById("Java").className = "hide";
-     document.getElementById("Csharp").className = "fullblock";
+        document.getElementById("Csharp").className = "fullblock";
         document.getElementById("Scratch").className = "hide";
         document.getElementById("Web").className = "hide";
         y1 = 1;
