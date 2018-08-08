@@ -7,7 +7,7 @@ ChocoBytes
 {   
 
 	1- HTML, CSS, JavaScript (frontend)   
-	2- Payton, MySQL (backend) 
+	2- Python, MySQL (backend) 
 
 }
 
